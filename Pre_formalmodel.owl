@@ -1,0 +1,232 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#"
+     xml:base="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#EspressoInGiorni -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#EspressoInGiorni"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#EspressoInPercentuale -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#EspressoInPercentuale">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#AreaClinica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#AreaClinica"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#By-passAortocoronarico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#By-passAortocoronarico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Mortalità30Giorni"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ChirurgiaGenerale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ChirurgiaGenerale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#AreaClinica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ChirurgiaOncologica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ChirurgiaOncologica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#AreaClinica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Circolatorio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Circolatorio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#AreaClinica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Complicanze -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Complicanze">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Indicatore"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Indicatore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Indicatore"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#InfartoMiocardicoAcuto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#InfartoMiocardicoAcuto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Mortalità30Giorni"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Interventi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Interventi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Indicatore"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Mortalità30Giorni -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Mortalità30Giorni">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Indicatore"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Nervoso -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Nervoso">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#AreaClinica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Osteomuscolare -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Osteomuscolare">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#AreaClinica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Respiratorio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Respiratorio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#AreaClinica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Ricoveri -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Ricoveri">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Indicatore"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#RiparazioneAneurisma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#RiparazioneAneurisma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Mortalità30Giorni"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ScompensoCardiacoCongestizio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ScompensoCardiacoCongestizio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Mortalità30Giorni"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#TempiAttesa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#TempiAttesa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Indicatore"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Gravidanza&amp;Parto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Gravidanza&amp;Parto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#AreaClinica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Valvuloplastica/SostituzioneValvoleCardiache -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Valvuloplastica/SostituzioneValvoleCardiache">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Mortalità30Giorni"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#By-passAortocoronarico"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#InfartoMiocardicoAcuto"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#RiparazioneAneurisma"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ScompensoCardiacoCongestizio"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Valvuloplastica/SostituzioneValvoleCardiache"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ChirurgiaGenerale"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ChirurgiaOncologica"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Circolatorio"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Nervoso"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Osteomuscolare"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Respiratorio"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Gravidanza&amp;Parto"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+
