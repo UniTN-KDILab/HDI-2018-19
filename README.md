@@ -1,5 +1,5 @@
 # HDI-2018-19
-This file explains our doubts on codifying some classes of our ontology./n
+This file explains our doubts on codifying some classes of our ontology.
 PREMISE: 
 we have to deal with different kinds of quality indicators for hospitals. 
 Each indicator can be assigned to a color coded value which visually identify the quality level of the hospital performance.
