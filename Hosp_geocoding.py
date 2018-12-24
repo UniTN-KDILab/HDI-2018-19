@@ -20,11 +20,15 @@ l.sort()
 
 Hosp_address=pd.read_excel('../Ospedali.xls',header=1)
 
+#Convert some acronyms
+
 sigle={'A.O.':'Azienda Ospedaliera','A.O.SSN':'Azienda ospedaliera integrata','A.O.U.U.':'Azienda ospedaliera universitaria',
                        'CCA':'Casa di Cura','CC':'Casa di Cura','E.R.':'Ente di Ricerca',
                         'IRCCSf':'Istituto di Ricovero','IRCCSpr':'Istituto di Ricovero Privato',
                         'IRCCSpub':'Istituto di Ricovero','Osp.':'Ospedale','Osp.C.':'Ospedale',
                         'Pol.U.':'Policlinico Universitario','Pres.':'Presidio'}
+
+#find the cordinate using the address, after the name of the structure was identified in xls file, and costruction of the dictionary to build the dataframe
 
 diz={}
 diz_lat={}
@@ -43,7 +47,7 @@ for i in l:
                 s=s.replace('S.atrix','Sanatrix')
 
 
-
+        # if the city of the hospital is not present, we use try to obtain directily the location with the name, not the address
 
         if fil.shape[0]==0:
                 g=gmaps.geocode(s)
@@ -55,10 +59,10 @@ for i in l:
                 diz[i]=t
                 diz_lat[i]=float(t[0])
                 diz_lng[i]=float(t[1]) 
+        # if there's only one structure for the city, we use directly the given address to obtain the location
         elif fil.shape[0]==1:
                 we='{}, {} ({})'.format(fil["Indirizzo"].values[0], fil['Comune'].values[0], fil['Sigla provincia'].values[0])
                 g=gmaps.geocode(we)
-                # print(g)
                 if len(g)==0:
                         we='{}, {} ({})'.format(fil['Denominazione struttura'].values[0], fil['Comune'].values[0], fil['Sigla provincia'].values[0])
                         g=gmaps.geocode(we)
@@ -67,6 +71,7 @@ for i in l:
                 diz[i]=t
                 diz_lat[i]=float(t[0])
                 diz_lng[i]=float(t[1]) 
+        # if there are more structure for that city, we try to find the best match for the name of the structure, to use its address and obtain the location
         else:
                 match=difflib.get_close_matches(s.upper(),fil['Denominazione struttura'].values,cutoff=0.3)
                 match=list(set(match))
@@ -94,7 +99,6 @@ for i in l:
                 
                 match=list(set(match))
                 if len(match)==0:
-                        # print(0,match,s)
                         g=gmaps.geocode(s)
                         if len(g)==0:
                                 we='{}, {} ({})'.format(fil['Denominazione struttura'].values[0], fil['Comune'].values[0], fil['Sigla provincia'].values[0])
@@ -121,6 +125,8 @@ for i in l:
                         diz_lng[i]=float(t[1]) 
 
 
+# building and writing the dataframe
+
 location=pd.Series(diz)
 lat=pd.Series(diz_lat)
 lng=pd.Series(diz_lng)
@@ -128,7 +134,5 @@ lng=pd.Series(diz_lng)
 diz_df={'location':location, 'latitude':lat, 'longitude': lng}
 
 df=pd.DataFrame(diz_df)
-
-print(df.head())
 
 df.to_csv('../Hospital_latlng.csv')
