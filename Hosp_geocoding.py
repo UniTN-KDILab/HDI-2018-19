@@ -14,8 +14,9 @@ gmaps = googlemaps.Client(key='AIzaSyDS2k7BAZh6enNKobgBIYeDM3kUlPWXaLM')
 PATH='./strutture_ospedaliere'
 os.chdir(PATH)
 l=os.listdir()
+l.sort()
 
-# search of the coordinates in latitude and longitude of the health carez
+# search of the coordinates in latitude and longitude of the health care 
 
 Hosp_address=pd.read_excel('../Ospedali.xls',header=1)
 
@@ -26,6 +27,8 @@ sigle={'A.O.':'Azienda Ospedaliera','A.O.SSN':'Azienda ospedaliera integrata','A
                         'Pol.U.':'Policlinico Universitario','Pres.':'Presidio'}
 
 diz={}
+diz_lat={}
+diz_lng={}
 lista=[]
 
 for i in l:
@@ -47,9 +50,11 @@ for i in l:
                 if len(g)==0:
                         we='{}, {} ({})'.format(fil['Denominazione struttura'].values[0], fil['Comune'].values[0], fil['Sigla provincia'].values[0])
                         g=gmaps.geocode(we)
-                t=(g[0]['geometry']['location']['lat'],g[0]['geometry']['location']['lng'])
+                t=(float(g[0]['geometry']['location']['lat']),float(g[0]['geometry']['location']['lng']))
                 print(t)
-                diz[i]=t 
+                diz[i]=t
+                diz_lat[i]=float(t[0])
+                diz_lng[i]=float(t[1]) 
         elif fil.shape[0]==1:
                 we='{}, {} ({})'.format(fil["Indirizzo"].values[0], fil['Comune'].values[0], fil['Sigla provincia'].values[0])
                 g=gmaps.geocode(we)
@@ -57,9 +62,11 @@ for i in l:
                 if len(g)==0:
                         we='{}, {} ({})'.format(fil['Denominazione struttura'].values[0], fil['Comune'].values[0], fil['Sigla provincia'].values[0])
                         g=gmaps.geocode(we)
-                t=(g[0]['geometry']['location']['lat'],g[0]['geometry']['location']['lng'])
+                t=(float(g[0]['geometry']['location']['lat']),float(g[0]['geometry']['location']['lng']))
                 print(t)
-                diz[i]=t 
+                diz[i]=t
+                diz_lat[i]=float(t[0])
+                diz_lng[i]=float(t[1]) 
         else:
                 match=difflib.get_close_matches(s.upper(),fil['Denominazione struttura'].values,cutoff=0.3)
                 match=list(set(match))
@@ -92,9 +99,11 @@ for i in l:
                         if len(g)==0:
                                 we='{}, {} ({})'.format(fil['Denominazione struttura'].values[0], fil['Comune'].values[0], fil['Sigla provincia'].values[0])
                                 g=gmaps.geocode(we)
-                        t=(g[0]['geometry']['location']['lat'],g[0]['geometry']['location']['lng'])
+                        t=(float(g[0]['geometry']['location']['lat']),float(g[0]['geometry']['location']['lng']))
                         print(t)
-                        diz[i]=t 
+                        diz[i]=t
+                        diz_lat[i]=float(t[0])
+                        diz_lng[i]=float(t[1]) 
                 else:
                         nome_struttura=match[0]
 
@@ -105,14 +114,21 @@ for i in l:
                         if len(g)==0:
                                 we='{}, {} ({})'.format(fil['Denominazione struttura'].values[0], fil['Comune'].values[0], fil['Sigla provincia'].values[0])
                                 g=gmaps.geocode(we)
-                        t=(g[0]['geometry']['location']['lat'],g[0]['geometry']['location']['lng'])
+                        t=(float(g[0]['geometry']['location']['lat']),float(g[0]['geometry']['location']['lng']))
                         print(t)
-                        diz[i]=t 
+                        diz[i]=t
+                        diz_lat[i]=float(t[0])
+                        diz_lng[i]=float(t[1]) 
 
-print(diz)
 
-                     
-        
-latlng=pd.Series(diz)
+location=pd.Series(diz)
+lat=pd.Series(diz_lat)
+lng=pd.Series(diz_lng)
 
-latlng.to_csv('../Hospital_latlng.csv')
+diz_df={'location':location, 'latitude':lat, 'longitude': lng}
+
+df=pd.DataFrame(diz_df)
+
+print(df.head())
+
+df.to_csv('../Hospital_latlng.csv')
