@@ -1,0 +1,247 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix geo: <http://www.georss.org/georss/> .
+@prefix gml: <http://www.opengis.net/gml/> .
+@prefix geo2003: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix karma_geospatial: <http://isi.edu/integration/karma/ontologies/model/current#geospatial/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1d16f7c32x1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "onecol_procedures.txt" ;
+	km-dev:modelPublicationTime "1547479265377"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"Procedures\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"Procedures\"}],[{\"columnName\":\"procedures_uri\"}]]" ;
+	km-dev:hasModelLabel "onecol_procedures.txt" ;
+	km-dev:hasBaseURI "http://localhost:8080/source/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Procedures\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"procedures_uri\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return \\\"clinicalprocedure_id/\\\"+getValue(\\\"Procedures\\\")\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Procedures\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"procedures_uri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Procedures\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure\",
+                    \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure/ClinicalProcedure1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Procedures\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Procedures\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"procedures_uri\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure\",
+                    \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure/ClinicalProcedure1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"procedures_uri\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"procedures_uri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    }
+]""" .
+
+km-dev:TriplesMap_a1b10480-a8cb-471f-b3fe-a614f02026f5 a rr:TriplesMap .
+
+_:node1d16f7c32x1 km-dev:hasTriplesMap km-dev:TriplesMap_a1b10480-a8cb-471f-b3fe-a614f02026f5 .
+
+km-dev:TriplesMap_a1b10480-a8cb-471f-b3fe-a614f02026f5 km-dev:isPartOfMapping _:node1d16f7c32x1 .
+
+_:node1d16f7c32x2 rr:tableName "onecol_procedures.txt" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d16f7c32x1 .
+
+_:node1d16f7c32x1 km-dev:hasLogicalTable _:node1d16f7c32x2 .
+
+km-dev:TriplesMap_a1b10480-a8cb-471f-b3fe-a614f02026f5 rr:logicalTable _:node1d16f7c32x2 ;
+	rr:subjectMap _:node1d16f7c32x3 .
+
+_:node1d16f7c32x1 km-dev:hasSubjectMap _:node1d16f7c32x3 .
+
+_:node1d16f7c32x3 km-dev:isPartOfMapping _:node1d16f7c32x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure1" ;
+	rr:class <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure> ;
+	rr:template "clinicalprocedure_id/{Procedures}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_269e3766-d237-4ac4-8cc8-eab54c0e5af1 rr:predicate rdfs:label .
+
+_:node1d16f7c32x4 rr:column "Procedures" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16f7c32x1 .
+
+_:node1d16f7c32x1 km-dev:hasObjectMap _:node1d16f7c32x4 .
+
+km-dev:PredicateObjectMap_269e3766-d237-4ac4-8cc8-eab54c0e5af1 rr:objectMap _:node1d16f7c32x4 .
+
+km-dev:TriplesMap_a1b10480-a8cb-471f-b3fe-a614f02026f5 rr:predicateObjectMap km-dev:PredicateObjectMap_269e3766-d237-4ac4-8cc8-eab54c0e5af1 .
+
+km-dev:PredicateObjectMap_269e3766-d237-4ac4-8cc8-eab54c0e5af1 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16f7c32x1 .
+
+_:node1d16f7c32x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_269e3766-d237-4ac4-8cc8-eab54c0e5af1 .

@@ -1,0 +1,21 @@
+<http://localhost:8080/source/clinical_area_id/Cardiology	> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilityDepartment> .
+<http://localhost:8080/source/clinical_area_id/Cardiology	> <http://www.w3.org/2000/01/rdf-schema#label> "Cardiology\t"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://localhost:8080/source/clinical_area_id/Neurology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilityDepartment> .
+<http://localhost:8080/source/clinical_area_id/Neurology> <http://www.w3.org/2000/01/rdf-schema#label> "Neurology"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://localhost:8080/source/clinical_area_id/Respiratory	> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilityDepartment> .
+<http://localhost:8080/source/clinical_area_id/Respiratory	> <http://www.w3.org/2000/01/rdf-schema#label> "Respiratory\t"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://localhost:8080/source/clinical_area_id/General_Surgery	> <http://www.w3.org/2000/01/rdf-schema#label> "General_Surgery\t"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://localhost:8080/source/clinical_area_id/General_Surgery	> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilityDepartment> .
+
+<http://localhost:8080/source/clinical_area_id/Oncologic_Surgery	> <http://www.w3.org/2000/01/rdf-schema#label> "Oncologic_Surgery\t"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://localhost:8080/source/clinical_area_id/Oncologic_Surgery	> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilityDepartment> .
+
+<http://localhost:8080/source/clinical_area_id/Obstetrics	> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilityDepartment> .
+<http://localhost:8080/source/clinical_area_id/Obstetrics	> <http://www.w3.org/2000/01/rdf-schema#label> "Obstetrics\t"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://localhost:8080/source/clinical_area_id/Orthopedics> <http://www.w3.org/2000/01/rdf-schema#label> "Orthopedics"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://localhost:8080/source/clinical_area_id/Orthopedics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilityDepartment> .
+

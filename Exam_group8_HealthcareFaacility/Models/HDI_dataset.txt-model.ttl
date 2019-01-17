@@ -1,0 +1,3466 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix geo: <http://www.georss.org/georss/> .
+@prefix gml: <http://www.opengis.net/gml/> .
+@prefix geo2003: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix karma_geospatial: <http://isi.edu/integration/karma/ontologies/model/current#geospatial/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1d16nh4s9x1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "HDI_dataset.txt" ;
+	km-dev:modelPublicationTime "1547487974281"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"Infarto Miocardico Acuto: % trattati con PTCA entro 2 giorni \"}],[{\"columnName\":\"Intervento chirurgico per TM stomaco: mortalità a 30 giorni \"}],[{\"columnName\":\"Infarto Miocardico Acuto: mortalità a 30 giorni \"}],[{\"columnName\":\"chirurgia conservativa per TM mammella: % nuovi interventi di resezione entro 120 giorni\"}],[{\"columnName\":\"Riparazione di aneurisma non rotto dell aorta addominale: mortalità a 30 giorni \"}],[{\"columnName\":\"Parto naturale: % complicanze durante il parto e il puerperio \"}],[{\"columnName\":\"Scompenso cardiaco congestizio: mortalità a 30 giorni \"}],[{\"columnName\":\"taglio cesareo primario: % parti\"}],[{\"columnName\":\"Colecistectomia laparoscopica: % interventi eseguiti in reparti con volume di attività superiore ai 90 cas \"}],[{\"columnName\":\"By-pass Aortocoronarico isolato: mortalità a 30 giorni \"}],[{\"columnName\":\"Intervento chirurgico per TM polmone: mortalità a 30 giorni \"}],[{\"columnName\":\"Intervento chirurgico per TM colon: mortalità a 30 giorni \"}],[{\"columnName\":\"structure\"}],[{\"columnName\":\"Chirurgia TM mammella: % interventi effettuati in reparti con volume di attività superiore ai 135 casi  \"}],[{\"columnName\":\"Valvuloplastica o sostituzione di valvole cardiache: mortalità a 30 giorni \"}],[{\"columnName\":\"id\"}],[{\"columnName\":\"Intervento chirurgico per T cerebrale: mortalità a 30 giorni dall'intervento di craniotomia \"}],[{\"columnName\":\"Frattura del collo del femore: intervento chirurgico entro 2 giorni \"}],[{\"columnName\":\"Ictus ischemico: mortalità a 30 giorni \"}],[{\"columnName\":\"Parto cesareo: % complicanze durante il parto e il puerperio \"}],[{\"columnName\":\"Colecistectomia laparoscopica: % ricoveri con degenza post operatoria inferiore a 3 giorni \"}],[{\"columnName\":\"BPCO riacutizzata: mortalità a 30 giorni \"}],[{\"columnName\":\"Frattura della Tibia e Perone: tempi di attesa per intervento chirurgico \"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"Infarto Miocardico Acuto: % trattati con PTCA entro 2 giorni \"}],[{\"columnName\":\"Intervento chirurgico per TM stomaco: mortalità a 30 giorni \"}],[{\"columnName\":\"Infarto Miocardico Acuto: mortalità a 30 giorni \"}],[{\"columnName\":\"chirurgia conservativa per TM mammella: % nuovi interventi di resezione entro 120 giorni\"}],[{\"columnName\":\"Riparazione di aneurisma non rotto dell aorta addominale: mortalità a 30 giorni \"}],[{\"columnName\":\"Parto naturale: % complicanze durante il parto e il puerperio \"}],[{\"columnName\":\"Scompenso cardiaco congestizio: mortalità a 30 giorni \"}],[{\"columnName\":\"taglio cesareo primario: % parti\"}],[{\"columnName\":\"Colecistectomia laparoscopica: % interventi eseguiti in reparti con volume di attività superiore ai 90 cas \"}],[{\"columnName\":\"By-pass Aortocoronarico isolato: mortalità a 30 giorni \"}],[{\"columnName\":\"Intervento chirurgico per TM polmone: mortalità a 30 giorni \"}],[{\"columnName\":\"facility_uri\"}],[{\"columnName\":\"Intervento chirurgico per TM colon: mortalità a 30 giorni \"}],[{\"columnName\":\"structure\"}],[{\"columnName\":\"Chirurgia TM mammella: % interventi effettuati in reparti con volume di attività superiore ai 135 casi  \"}],[{\"columnName\":\"Valvuloplastica o sostituzione di valvole cardiache: mortalità a 30 giorni \"}],[{\"columnName\":\"Intervento chirurgico per T cerebrale: mortalità a 30 giorni dall'intervento di craniotomia \"}],[{\"columnName\":\"Frattura del collo del femore: intervento chirurgico entro 2 giorni \"}],[{\"columnName\":\"Ictus ischemico: mortalità a 30 giorni \"}],[{\"columnName\":\"Parto cesareo: % complicanze durante il parto e il puerperio \"}],[{\"columnName\":\"Colecistectomia laparoscopica: % ricoveri con degenza post operatoria inferiore a 3 giorni \"}],[{\"columnName\":\"BPCO riacutizzata: mortalità a 30 giorni \"}],[{\"columnName\":\"Frattura della Tibia e Perone: tempi di attesa per intervento chirurgico \"}],[{\"columnName\":\"structure_uri\"}]]" ;
+	km-dev:hasModelLabel "HDI_dataset.txt" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"id\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"structure_uri\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return \\\"structure_id/\\\" + getValue(\\\"id\\\")\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"id\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"structure_uri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"OrganizeColumnsCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"orderedColumns\",
+                \"type\": \"orderedColumns\",
+                \"value\": [
+                    {
+                        \"visible\": true,
+                        \"name\": \"id\",
+                        \"id\": [{\"columnName\": \"id\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"name\": \"structure\",
+                        \"id\": [{\"columnName\": \"structure\"}]
+                    },
+                    {
+                        \"visible\": false,
+                        \"name\": \"location\",
+                        \"id\": [{\"columnName\": \"location\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"name\": \"Infarto Miocardico Acuto: mortalità a 30 giorni \",
+                        \"id\": [{\"columnName\": \"Infarto Miocardico Acuto: mortalità a 30 giorni \"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"name\": \"Infarto Miocardico Acuto: % trattati con PTCA entro 2 giorni \",
+                        \"id\": [{\"columnName\": \"Infarto Miocardico Acuto: % trattati con PTCA entro 2 giorni \"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"name\": \"Scompenso cardiaco congestizio: mortalità a 30 giorni \",
+                        \"id\": [{\"columnName\": \"Scompenso cardiaco congestizio: mortalità a 30 giorni \"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"name\": \"Riparazione di aneurisma non rotto dell aorta addominale: mortalità a 30 giorni \",
+                        \"id\": [{\"columnName\": \"Riparazione di aneurisma non rotto dell aorta addominale: mortalità a 30 giorni \"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"name\": \"Ictus ischemico: mortalità a 30 giorni \",
+                        \"id\": [{\"columnName\": \"Ictus ischemico: mortalità a 30 giorni \"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"name\": \"Intervento chirurgico per T cerebrale: mortalità a 30 giorni dall'intervento di craniotomia \",
+                        \"id\": [{\"columnName\": \"Intervento chirurgico per T cerebrale: mortalità a 30 giorni dall'intervento di craniotomia \"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"name\": \"BPCO riacutizzata: mortalità a 30 giorni \",
+                        \"id\": [{\"columnName\": \"BPCO riacutizzata: mortalità a 30 giorni \"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"name\": \"Colecistectomia laparoscopica: % ricoveri con degenza post operatoria inferiore a 3 giorni \",
+                        \"id\": [{\"columnName\": \"Colecistectomia laparoscopica: % ricoveri con degenza post operatoria inferiore a 3 giorni \"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"name\": \"Colecistectomia laparoscopica: % interventi eseguiti in reparti con volume di attività superiore ai 90 cas \",
+                        \"id\": [{\"columnName\": \"Colecistectomia laparoscopica: % interventi eseguiti in reparti con volume di attività superiore ai 90 cas \"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"name\": \"Chirurgia TM mammella: % interventi effettuati in reparti con volume di attività superiore ai 135 casi  \",
+                        \"id\": [{\"columnName\": \"Chirurgia TM mammella: % interventi effettuati in reparti con volume di attività superiore ai 135 casi  \"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"name\": \"chirurgia conservativa per TM mammella: % nuovi interventi di resezione entro 120 giorni\",
+                        \"id\": [{\"columnName\": \"chirurgia conservativa per TM mammella: % nuovi interventi di resezione entro 120 giorni\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"name\": \"Intervento chirurgico per TM colon: mortalità a 30 giorni \",
+                        \"id\": [{\"columnName\": \"Intervento chirurgico per TM colon: mortalità a 30 giorni \"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"name\": \"Intervento chirurgico per TM stomaco: mortalità a 30 giorni \",
+                        \"id\": [{\"columnName\": \"Intervento chirurgico per TM stomaco: mortalità a 30 giorni \"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"name\": \"taglio cesareo primario: % parti\",
+                        \"id\": [{\"columnName\": \"taglio cesareo primario: % parti\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"name\": \"Parto cesareo: % complicanze durante il parto e il puerperio \",
+                        \"id\": [{\"columnName\": \"Parto cesareo: % complicanze durante il parto e il puerperio \"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"name\": \"Parto naturale: % complicanze durante il parto e il puerperio \",
+                        \"id\": [{\"columnName\": \"Parto naturale: % complicanze durante il parto e il puerperio \"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"name\": \"Frattura del collo del femore: intervento chirurgico entro 2 giorni \",
+                        \"id\": [{\"columnName\": \"Frattura del collo del femore: intervento chirurgico entro 2 giorni \"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"name\": \"Frattura della Tibia e Perone: tempi di attesa per intervento chirurgico \",
+                        \"id\": [{\"columnName\": \"Frattura della Tibia e Perone: tempi di attesa per intervento chirurgico \"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"name\": \"Intervento chirurgico per TM polmone: mortalità a 30 giorni \",
+                        \"id\": [{\"columnName\": \"Intervento chirurgico per TM polmone: mortalità a 30 giorni \"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"name\": \"By-pass Aortocoronarico isolato: mortalità a 30 giorni \",
+                        \"id\": [{\"columnName\": \"By-pass Aortocoronarico isolato: mortalità a 30 giorni \"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"name\": \"Valvuloplastica o sostituzione di valvole cardiache: mortalità a 30 giorni \",
+                        \"id\": [{\"columnName\": \"Valvuloplastica o sostituzione di valvole cardiache: mortalità a 30 giorni \"}]
+                    },
+                    {
+                        \"visible\": false,
+                        \"name\": \"stringAsFactors\",
+                        \"id\": [{\"columnName\": \"stringAsFactors\"}]
+                    },
+                    {
+                        \"visible\": false,
+                        \"name\": \"stringAsFactors\",
+                        \"id\": [{\"columnName\": \"stringAsFactors\"}]
+                    }
+                ]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [
+            \"Transformation\",
+            \"IgnoreInBatch\"
+        ]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"id\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"facility_uri\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \" a = \\\"facility_id/\\\"+getValue(\\\"id\\\").replace(\\\" \\\",\\\"\\\")\\nreturn a\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"id\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"facility_uri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"structure\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilitiy\",
+                    \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilitiy1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilitiy/HealthcareFacilitiy1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"structure\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"structure\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Infarto Miocardico Acuto: mortalità a 30 giorni \"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#AcuteMiocardialStrokeStandardProcedure\",
+                    \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#AcuteMiocardialStrokeStandardProcedure1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#30DaysMortality_QualityCriterion\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#AcuteMiocardialStrokeStandardProcedure/AcuteMiocardialStrokeStandardProcedure1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Infarto Miocardico Acuto: mortalità a 30 giorni \\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Infarto Miocardico Acuto: mortalità a 30 giorni \\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Infarto Miocardico Acuto: % trattati con PTCA entro 2 giorni \"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#AcuteMiocardialStrokeStandardProcedure\",
+                    \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#AcuteMiocardialStrokeStandardProcedure1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#PTCAProcedureBy2Days_QualityCriterion\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#AcuteMiocardialStrokeStandardProcedure/AcuteMiocardialStrokeStandardProcedure1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Infarto Miocardico Acuto: % trattati con PTCA entro 2 giorni \\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Infarto Miocardico Acuto: % trattati con PTCA entro 2 giorni \\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Scompenso cardiaco congestizio: mortalità a 30 giorni \"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#CongestiveHeartFailureStandardProcedure\",
+                    \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#CongestiveHeartFailureStandardProcedure1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#30DaysMortality_QualityCriterion\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#CongestiveHeartFailureStandardProcedure/CongestiveHeartFailureStandardProcedure1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Scompenso cardiaco congestizio: mortalità a 30 giorni \\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Scompenso cardiaco congestizio: mortalità a 30 giorni \\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Riparazione di aneurisma non rotto dell aorta addominale: mortalità a 30 giorni \"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#AneurysmRepairSurgery\",
+                    \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#AneurysmRepairSurgery1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#30DaysMortality_QualityCriterion\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#AneurysmRepairSurgery/AneurysmRepairSurgery1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Riparazione di aneurisma non rotto dell aorta addominale: mortalità a 30 giorni \\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Riparazione di aneurisma non rotto dell aorta addominale: mortalità a 30 giorni \\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Ictus ischemico: mortalità a 30 giorni \"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#IschemicStrokeStandardProcedure\",
+                    \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#IschemicStrokeStandardProcedure1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#30DaysMortality_QualityCriterion\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#IschemicStrokeStandardProcedure/IschemicStrokeStandardProcedure1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Ictus ischemico: mortalità a 30 giorni \\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Ictus ischemico: mortalità a 30 giorni \\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Intervento chirurgico per T cerebrale: mortalità a 30 giorni dall'intervento di craniotomia \"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#CraniotomySurgery\",
+                    \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#CraniotomySurgery1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#30DaysMortality_QualityCriterion\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#CraniotomySurgery/CraniotomySurgery1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Intervento chirurgico per T cerebrale: mortalità a 30 giorni dall'intervento di craniotomia \\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Intervento chirurgico per T cerebrale: mortalità a 30 giorni dall'intervento di craniotomia \\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"BPCO riacutizzata: mortalità a 30 giorni \"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ChronicObstructivePulmonaryDiseaseStandardProcedure\",
+                    \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ChronicObstructivePulmonaryDiseaseStandardProcedure1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#30DaysMortality_QualityCriterion\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ChronicObstructivePulmonaryDiseaseStandardProcedure/ChronicObstructivePulmonaryDiseaseStandardProcedure1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"BPCO riacutizzata: mortalità a 30 giorni \\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"BPCO riacutizzata: mortalità a 30 giorni \\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Colecistectomia laparoscopica: % ricoveri con degenza post operatoria inferiore a 3 giorni \"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#LaparoscopicColecistectomy\",
+                    \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#LaparoscopicColecistectomy1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Under3DaysRecoveryStay_QualityCriterion\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#LaparoscopicColecistectomy/LaparoscopicColecistectomy1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Colecistectomia laparoscopica: % ricoveri con degenza post operatoria inferiore a 3 giorni \\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Colecistectomia laparoscopica: % ricoveri con degenza post operatoria inferiore a 3 giorni \\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Colecistectomia laparoscopica: % interventi eseguiti in reparti con volume di attività superiore ai 90 cas \"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#LaparoscopicColecistectomy\",
+                    \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#LaparoscopicColecistectomy1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#90AnnualProcedures_QualityCriterion\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#LaparoscopicColecistectomy/LaparoscopicColecistectomy1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Colecistectomia laparoscopica: % interventi eseguiti in reparti con volume di attività superiore ai 90 cas \\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Colecistectomia laparoscopica: % interventi eseguiti in reparti con volume di attività superiore ai 90 cas \\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Chirurgia TM mammella: % interventi effettuati in reparti con volume di attività superiore ai 135 casi  \"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#MammaryTumorSurgery\",
+                    \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#MammaryTumorSurgery1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#135AnnualProcedures_QualityCriterion\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#MammaryTumorSurgery/MammaryTumorSurgery1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Chirurgia TM mammella: % interventi effettuati in reparti con volume di attività superiore ai 135 casi  \\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Chirurgia TM mammella: % interventi effettuati in reparti con volume di attività superiore ai 135 casi  \\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Intervento chirurgico per TM colon: mortalità a 30 giorni \"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ColonTumorSurgery\",
+                    \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ColonTumorSurgery1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#30DaysMortality_QualityCriterion\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ColonTumorSurgery/ColonTumorSurgery1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Intervento chirurgico per TM colon: mortalità a 30 giorni \\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Intervento chirurgico per TM colon: mortalità a 30 giorni \\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"chirurgia conservativa per TM mammella: % nuovi interventi di resezione entro 120 giorni\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#MammaryTumorSurgery\",
+                    \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#MammaryTumorSurgery1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#SecondaryProcedureOccurrenceBy120Days_QualityCriterion\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#MammaryTumorSurgery/MammaryTumorSurgery1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"chirurgia conservativa per TM mammella: % nuovi interventi di resezione entro 120 giorni\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"chirurgia conservativa per TM mammella: % nuovi interventi di resezione entro 120 giorni\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Intervento chirurgico per TM stomaco: mortalità a 30 giorni \"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#StomachTumorSurgery\",
+                    \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#StomachTumorSurgery1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#30DaysMortality_QualityCriterion\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#StomachTumorSurgery/StomachTumorSurgery1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Intervento chirurgico per TM stomaco: mortalità a 30 giorni \\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Intervento chirurgico per TM stomaco: mortalità a 30 giorni \\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"taglio cesareo primario: % parti\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#BirthDeliveryProcedure\",
+                    \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#BirthDeliveryProcedure1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#CaesarianProcedureOccurrence_QualityCriterion\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#BirthDeliveryProcedure/BirthDeliveryProcedure1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"taglio cesareo primario: % parti\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"taglio cesareo primario: % parti\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Parto cesareo: % complicanze durante il parto e il puerperio \"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#BirthDeliveryProcedure\",
+                    \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#BirthDeliveryProcedure1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#DeliveryComplicationOccurrence_QualityCriterion\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#BirthDeliveryProcedure/BirthDeliveryProcedure1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Parto cesareo: % complicanze durante il parto e il puerperio \\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Parto cesareo: % complicanze durante il parto e il puerperio \\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Parto naturale: % complicanze durante il parto e il puerperio \"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#BirthDeliveryProcedure\",
+                    \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#BirthDeliveryProcedure2\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#DeliveryComplicationOccurrence_QualityCriterion\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#BirthDeliveryProcedure/BirthDeliveryProcedure2 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Parto naturale: % complicanze durante il parto e il puerperio \\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Parto naturale: % complicanze durante il parto e il puerperio \\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Frattura del collo del femore: intervento chirurgico entro 2 giorni \"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#FemoralNeckFractureSurgery\",
+                    \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#FemoralNeckFractureSurgery1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#FractureProcedureBy2Days_QualityCriterion\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#FemoralNeckFractureSurgery/FemoralNeckFractureSurgery1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Frattura del collo del femore: intervento chirurgico entro 2 giorni \\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Frattura del collo del femore: intervento chirurgico entro 2 giorni \\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Frattura della Tibia e Perone: tempi di attesa per intervento chirurgico \"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Tibia/FibulaFractureSurgery\",
+                    \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Tibia/FibulaFractureSurgery1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ProcedureWaitingTime_QualityCriterion\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Tibia/FibulaFractureSurgery/FibulaFractureSurgery1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Frattura della Tibia e Perone: tempi di attesa per intervento chirurgico \\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Frattura della Tibia e Perone: tempi di attesa per intervento chirurgico \\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Intervento chirurgico per TM polmone: mortalità a 30 giorni \"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#LungTumorSurgery\",
+                    \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#LungTumorSurgery1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#30DaysMortality_QualityCriterion\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#LungTumorSurgery/LungTumorSurgery1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Intervento chirurgico per TM polmone: mortalità a 30 giorni \\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Intervento chirurgico per TM polmone: mortalità a 30 giorni \\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"By-pass Aortocoronarico isolato: mortalità a 30 giorni \"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#CoronaryArteryBypassSurgery\",
+                    \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#CoronaryArteryBypassSurgery1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#30DaysMortality_QualityCriterion\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#CoronaryArteryBypassSurgery/CoronaryArteryBypassSurgery1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"By-pass Aortocoronarico isolato: mortalità a 30 giorni \\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"By-pass Aortocoronarico isolato: mortalità a 30 giorni \\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Valvuloplastica o sostituzione di valvole cardiache: mortalità a 30 giorni \"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ValvuloplastySurgery\",
+                    \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ValvuloplastySurgery1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#30DaysMortality_QualityCriterion\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ValvuloplastySurgery/ValvuloplastySurgery1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Valvuloplastica o sostituzione di valvole cardiache: mortalità a 30 giorni \\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Valvuloplastica o sostituzione di valvole cardiache: mortalità a 30 giorni \\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"facility_uri\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilitiy\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilitiy1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilitiy\",
+                    \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilitiy1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilitiy/HealthcareFacilitiy1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"facility_uri\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"facility_uri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#AcuteMiocardialStrokeStandardProcedure1\",
+                    \"edgeId\": \"http://www.w3.org/2000/01/rdf-schema#subClassOf\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#AcuteMiocardialStrokeStandardProcedure\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#CongestiveHeartFailureStandardProcedure1\",
+                    \"edgeId\": \"http://www.w3.org/2000/01/rdf-schema#subClassOf\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#CongestiveHeartFailureStandardProcedure\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#AneurysmRepairSurgery1\",
+                    \"edgeId\": \"http://www.w3.org/2000/01/rdf-schema#subClassOf\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#AneurysmRepairSurgery\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#IschemicStrokeStandardProcedure1\",
+                    \"edgeId\": \"http://www.w3.org/2000/01/rdf-schema#subClassOf\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#IschemicStrokeStandardProcedure\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#CraniotomySurgery1\",
+                    \"edgeId\": \"http://www.w3.org/2000/01/rdf-schema#subClassOf\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#CraniotomySurgery\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ChronicObstructivePulmonaryDiseaseStandardProcedure1\",
+                    \"edgeId\": \"http://www.w3.org/2000/01/rdf-schema#subClassOf\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ChronicObstructivePulmonaryDiseaseStandardProcedure\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#LaparoscopicColecistectomy1\",
+                    \"edgeId\": \"http://www.w3.org/2000/01/rdf-schema#subClassOf\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#LaparoscopicColecistectomy\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#MammaryTumorSurgery1\",
+                    \"edgeId\": \"http://www.w3.org/2000/01/rdf-schema#subClassOf\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#MammaryTumorSurgery\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ColonTumorSurgery1\",
+                    \"edgeId\": \"http://www.w3.org/2000/01/rdf-schema#subClassOf\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ColonTumorSurgery\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#StomachTumorSurgery1\",
+                    \"edgeId\": \"http://www.w3.org/2000/01/rdf-schema#subClassOf\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#StomachTumorSurgery\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#BirthDeliveryProcedure1\",
+                    \"edgeId\": \"http://www.w3.org/2000/01/rdf-schema#subClassOf\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#BirthDeliveryProcedure\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#BirthDeliveryProcedure2\",
+                    \"edgeId\": \"http://www.w3.org/2000/01/rdf-schema#subClassOf\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#BirthDeliveryProcedure\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#FemoralNeckFractureSurgery1\",
+                    \"edgeId\": \"http://www.w3.org/2000/01/rdf-schema#subClassOf\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#FemoralNeckFractureSurgery\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Tibia/FibulaFractureSurgery1\",
+                    \"edgeId\": \"http://www.w3.org/2000/01/rdf-schema#subClassOf\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Tibia/FibulaFractureSurgery\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#LungTumorSurgery1\",
+                    \"edgeId\": \"http://www.w3.org/2000/01/rdf-schema#subClassOf\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#LungTumorSurgery\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#CoronaryArteryBypassSurgery1\",
+                    \"edgeId\": \"http://www.w3.org/2000/01/rdf-schema#subClassOf\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#CoronaryArteryBypassSurgery\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ValvuloplastySurgery1\",
+                    \"edgeId\": \"http://www.w3.org/2000/01/rdf-schema#subClassOf\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ValvuloplastySurgery\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilitiy1\",
+                    \"edgeId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#performedIn\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilitiy\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilityDepartment1\",
+                    \"edgeId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#performedIn\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilityDepartment\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    }
+]""" .
+
+km-dev:TriplesMap_339b6390-be4b-439f-be61-e254779cb8bf a rr:TriplesMap .
+
+_:node1d16nh4s9x1 km-dev:hasTriplesMap km-dev:TriplesMap_339b6390-be4b-439f-be61-e254779cb8bf .
+
+km-dev:TriplesMap_339b6390-be4b-439f-be61-e254779cb8bf km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x2 rr:tableName "HDI_dataset.txt" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasLogicalTable _:node1d16nh4s9x2 .
+
+km-dev:TriplesMap_339b6390-be4b-439f-be61-e254779cb8bf rr:logicalTable _:node1d16nh4s9x2 ;
+	rr:subjectMap _:node1d16nh4s9x3 .
+
+_:node1d16nh4s9x1 km-dev:hasSubjectMap _:node1d16nh4s9x3 .
+
+_:node1d16nh4s9x3 km-dev:isPartOfMapping _:node1d16nh4s9x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#AcuteMiocardialStrokeStandardProcedure1" ;
+	rr:class <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#AcuteMiocardialStrokeStandardProcedure> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "AcuteMiocardialStrokeStandardProcedure1" .
+
+km-dev:PredicateObjectMap_d301f0f5-77f9-41f3-85cc-bcbce94a632d rr:predicate <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#30DaysMortality_QualityCriterion> .
+
+_:node1d16nh4s9x4 rr:column "Infarto Miocardico Acuto: mortalità a 30 giorni " ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap _:node1d16nh4s9x4 .
+
+km-dev:PredicateObjectMap_d301f0f5-77f9-41f3-85cc-bcbce94a632d rr:objectMap _:node1d16nh4s9x4 .
+
+km-dev:TriplesMap_339b6390-be4b-439f-be61-e254779cb8bf rr:predicateObjectMap km-dev:PredicateObjectMap_d301f0f5-77f9-41f3-85cc-bcbce94a632d .
+
+km-dev:PredicateObjectMap_d301f0f5-77f9-41f3-85cc-bcbce94a632d a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d301f0f5-77f9-41f3-85cc-bcbce94a632d .
+
+km-dev:PredicateObjectMap_9bfddd0a-e310-409f-82bc-6d2cb7d290df rr:predicate <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#PTCAProcedureBy2Days_QualityCriterion> .
+
+_:node1d16nh4s9x5 rr:column "Infarto Miocardico Acuto: % trattati con PTCA entro 2 giorni " ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap _:node1d16nh4s9x5 .
+
+km-dev:PredicateObjectMap_9bfddd0a-e310-409f-82bc-6d2cb7d290df rr:objectMap _:node1d16nh4s9x5 .
+
+km-dev:TriplesMap_339b6390-be4b-439f-be61-e254779cb8bf rr:predicateObjectMap km-dev:PredicateObjectMap_9bfddd0a-e310-409f-82bc-6d2cb7d290df .
+
+km-dev:PredicateObjectMap_9bfddd0a-e310-409f-82bc-6d2cb7d290df a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_9bfddd0a-e310-409f-82bc-6d2cb7d290df .
+
+km-dev:TriplesMap_e794186a-7d2f-49ef-813d-8c1ae3514f80 a rr:TriplesMap .
+
+_:node1d16nh4s9x1 km-dev:hasTriplesMap km-dev:TriplesMap_e794186a-7d2f-49ef-813d-8c1ae3514f80 .
+
+km-dev:TriplesMap_e794186a-7d2f-49ef-813d-8c1ae3514f80 km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x6 rr:tableName "HDI_dataset.txt" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasLogicalTable _:node1d16nh4s9x6 .
+
+km-dev:TriplesMap_e794186a-7d2f-49ef-813d-8c1ae3514f80 rr:logicalTable _:node1d16nh4s9x6 ;
+	rr:subjectMap _:node1d16nh4s9x7 .
+
+_:node1d16nh4s9x1 km-dev:hasSubjectMap _:node1d16nh4s9x7 .
+
+_:node1d16nh4s9x7 km-dev:isPartOfMapping _:node1d16nh4s9x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#LaparoscopicColecistectomy1" ;
+	rr:class <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#LaparoscopicColecistectomy> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "LaparoscopicColecistectomy1" .
+
+km-dev:PredicateObjectMap_1ec24481-7763-4228-9254-f83317658abd rr:predicate <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Under3DaysRecoveryStay_QualityCriterion> .
+
+_:node1d16nh4s9x8 rr:column "Colecistectomia laparoscopica: % ricoveri con degenza post operatoria inferiore a 3 giorni " ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap _:node1d16nh4s9x8 .
+
+km-dev:PredicateObjectMap_1ec24481-7763-4228-9254-f83317658abd rr:objectMap _:node1d16nh4s9x8 .
+
+km-dev:TriplesMap_e794186a-7d2f-49ef-813d-8c1ae3514f80 rr:predicateObjectMap km-dev:PredicateObjectMap_1ec24481-7763-4228-9254-f83317658abd .
+
+km-dev:PredicateObjectMap_1ec24481-7763-4228-9254-f83317658abd a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1ec24481-7763-4228-9254-f83317658abd .
+
+km-dev:PredicateObjectMap_6aeae7f4-e1c6-4a92-b03d-9485d58aafed rr:predicate <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#90AnnualProcedures_QualityCriterion> .
+
+_:node1d16nh4s9x9 rr:column "Colecistectomia laparoscopica: % interventi eseguiti in reparti con volume di attività superiore ai 90 cas " ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap _:node1d16nh4s9x9 .
+
+km-dev:PredicateObjectMap_6aeae7f4-e1c6-4a92-b03d-9485d58aafed rr:objectMap _:node1d16nh4s9x9 .
+
+km-dev:TriplesMap_e794186a-7d2f-49ef-813d-8c1ae3514f80 rr:predicateObjectMap km-dev:PredicateObjectMap_6aeae7f4-e1c6-4a92-b03d-9485d58aafed .
+
+km-dev:PredicateObjectMap_6aeae7f4-e1c6-4a92-b03d-9485d58aafed a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6aeae7f4-e1c6-4a92-b03d-9485d58aafed .
+
+km-dev:TriplesMap_30d2e039-9413-4484-85eb-1c22ed924ff2 a rr:TriplesMap .
+
+_:node1d16nh4s9x1 km-dev:hasTriplesMap km-dev:TriplesMap_30d2e039-9413-4484-85eb-1c22ed924ff2 .
+
+km-dev:TriplesMap_30d2e039-9413-4484-85eb-1c22ed924ff2 km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x10 rr:tableName "HDI_dataset.txt" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasLogicalTable _:node1d16nh4s9x10 .
+
+km-dev:TriplesMap_30d2e039-9413-4484-85eb-1c22ed924ff2 rr:logicalTable _:node1d16nh4s9x10 ;
+	rr:subjectMap _:node1d16nh4s9x11 .
+
+_:node1d16nh4s9x1 km-dev:hasSubjectMap _:node1d16nh4s9x11 .
+
+_:node1d16nh4s9x11 km-dev:isPartOfMapping _:node1d16nh4s9x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure1" ;
+	rr:class <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "ClinicalProcedure1" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_5224ba15-04cf-48b7-b91f-ec960bc6e97e rr:predicate <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#performedIn> .
+
+km-dev:RefObjectMap_87716bd7-8921-414c-abb6-698b5ad24081 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_1a2ff009-8bcf-4313-b6fc-c9eafc43efd3 ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap km-dev:RefObjectMap_87716bd7-8921-414c-abb6-698b5ad24081 .
+
+km-dev:PredicateObjectMap_5224ba15-04cf-48b7-b91f-ec960bc6e97e rr:objectMap km-dev:RefObjectMap_87716bd7-8921-414c-abb6-698b5ad24081 .
+
+km-dev:TriplesMap_30d2e039-9413-4484-85eb-1c22ed924ff2 rr:predicateObjectMap km-dev:PredicateObjectMap_5224ba15-04cf-48b7-b91f-ec960bc6e97e .
+
+km-dev:PredicateObjectMap_5224ba15-04cf-48b7-b91f-ec960bc6e97e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_5224ba15-04cf-48b7-b91f-ec960bc6e97e .
+
+km-dev:PredicateObjectMap_71d46756-dd51-4f5a-88df-385d070538a3 rr:predicate rdfs:subClassOf .
+
+km-dev:RefObjectMap_a484cdb5-0e64-4cce-8853-2c10fa5c65a6 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_91f220b8-ed3f-474e-81b9-02926d77dec7 ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap km-dev:RefObjectMap_a484cdb5-0e64-4cce-8853-2c10fa5c65a6 .
+
+km-dev:PredicateObjectMap_71d46756-dd51-4f5a-88df-385d070538a3 rr:objectMap km-dev:RefObjectMap_a484cdb5-0e64-4cce-8853-2c10fa5c65a6 .
+
+km-dev:TriplesMap_30d2e039-9413-4484-85eb-1c22ed924ff2 rr:predicateObjectMap km-dev:PredicateObjectMap_71d46756-dd51-4f5a-88df-385d070538a3 .
+
+km-dev:PredicateObjectMap_71d46756-dd51-4f5a-88df-385d070538a3 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_71d46756-dd51-4f5a-88df-385d070538a3 .
+
+km-dev:PredicateObjectMap_134b4bb9-195f-4c1a-9501-61e34710cb55 rr:predicate rdfs:subClassOf .
+
+km-dev:RefObjectMap_a14e7222-ec5e-44b2-b15a-58c0f4573feb a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_f6194132-d12c-4ec3-8f28-7f558e4aff2d ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap km-dev:RefObjectMap_a14e7222-ec5e-44b2-b15a-58c0f4573feb .
+
+km-dev:PredicateObjectMap_134b4bb9-195f-4c1a-9501-61e34710cb55 rr:objectMap km-dev:RefObjectMap_a14e7222-ec5e-44b2-b15a-58c0f4573feb .
+
+km-dev:TriplesMap_30d2e039-9413-4484-85eb-1c22ed924ff2 rr:predicateObjectMap km-dev:PredicateObjectMap_134b4bb9-195f-4c1a-9501-61e34710cb55 .
+
+km-dev:PredicateObjectMap_134b4bb9-195f-4c1a-9501-61e34710cb55 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_134b4bb9-195f-4c1a-9501-61e34710cb55 .
+
+km-dev:PredicateObjectMap_f6d64494-2810-4c8d-bb0a-a02d26a60e29 rr:predicate rdfs:subClassOf .
+
+km-dev:RefObjectMap_c1977842-62df-4ed2-9f20-c7eddfb6e7ef a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_83068a72-2a2b-4be6-868f-b83b1a9e483f ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap km-dev:RefObjectMap_c1977842-62df-4ed2-9f20-c7eddfb6e7ef .
+
+km-dev:PredicateObjectMap_f6d64494-2810-4c8d-bb0a-a02d26a60e29 rr:objectMap km-dev:RefObjectMap_c1977842-62df-4ed2-9f20-c7eddfb6e7ef .
+
+km-dev:TriplesMap_30d2e039-9413-4484-85eb-1c22ed924ff2 rr:predicateObjectMap km-dev:PredicateObjectMap_f6d64494-2810-4c8d-bb0a-a02d26a60e29 .
+
+km-dev:PredicateObjectMap_f6d64494-2810-4c8d-bb0a-a02d26a60e29 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f6d64494-2810-4c8d-bb0a-a02d26a60e29 .
+
+km-dev:PredicateObjectMap_b2bd04ac-b5c4-4114-9b2b-1be02035e065 rr:predicate rdfs:subClassOf .
+
+km-dev:RefObjectMap_3c91b02b-7420-47f7-b935-70a9dfaadd20 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_0491634c-1f4e-4901-b721-23faeaa3f2fb ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap km-dev:RefObjectMap_3c91b02b-7420-47f7-b935-70a9dfaadd20 .
+
+km-dev:PredicateObjectMap_b2bd04ac-b5c4-4114-9b2b-1be02035e065 rr:objectMap km-dev:RefObjectMap_3c91b02b-7420-47f7-b935-70a9dfaadd20 .
+
+km-dev:TriplesMap_30d2e039-9413-4484-85eb-1c22ed924ff2 rr:predicateObjectMap km-dev:PredicateObjectMap_b2bd04ac-b5c4-4114-9b2b-1be02035e065 .
+
+km-dev:PredicateObjectMap_b2bd04ac-b5c4-4114-9b2b-1be02035e065 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b2bd04ac-b5c4-4114-9b2b-1be02035e065 .
+
+km-dev:PredicateObjectMap_2705904a-7e8d-4b3d-93f0-eda5904d668d rr:predicate rdfs:subClassOf .
+
+km-dev:RefObjectMap_88609544-8331-43e0-847e-9a959e6e2c53 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_69684059-3518-4178-900c-c060606c60de ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap km-dev:RefObjectMap_88609544-8331-43e0-847e-9a959e6e2c53 .
+
+km-dev:PredicateObjectMap_2705904a-7e8d-4b3d-93f0-eda5904d668d rr:objectMap km-dev:RefObjectMap_88609544-8331-43e0-847e-9a959e6e2c53 .
+
+km-dev:TriplesMap_30d2e039-9413-4484-85eb-1c22ed924ff2 rr:predicateObjectMap km-dev:PredicateObjectMap_2705904a-7e8d-4b3d-93f0-eda5904d668d .
+
+km-dev:PredicateObjectMap_2705904a-7e8d-4b3d-93f0-eda5904d668d a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2705904a-7e8d-4b3d-93f0-eda5904d668d .
+
+km-dev:PredicateObjectMap_04a8e57f-d0de-4158-a0fa-cfad2731f1ee rr:predicate rdfs:subClassOf .
+
+km-dev:RefObjectMap_dc05ac11-d0a7-447d-959a-6230c90ad683 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_54adf97e-d115-4a5a-b5ad-d4203f4dc1e5 ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap km-dev:RefObjectMap_dc05ac11-d0a7-447d-959a-6230c90ad683 .
+
+km-dev:PredicateObjectMap_04a8e57f-d0de-4158-a0fa-cfad2731f1ee rr:objectMap km-dev:RefObjectMap_dc05ac11-d0a7-447d-959a-6230c90ad683 .
+
+km-dev:TriplesMap_30d2e039-9413-4484-85eb-1c22ed924ff2 rr:predicateObjectMap km-dev:PredicateObjectMap_04a8e57f-d0de-4158-a0fa-cfad2731f1ee .
+
+km-dev:PredicateObjectMap_04a8e57f-d0de-4158-a0fa-cfad2731f1ee a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_04a8e57f-d0de-4158-a0fa-cfad2731f1ee .
+
+km-dev:PredicateObjectMap_ec9561eb-6909-4d85-a8c8-b64c8b0581be rr:predicate rdfs:subClassOf .
+
+km-dev:RefObjectMap_24594db1-12fa-49a2-beac-79dea4dd7c88 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_7746afbe-d432-4667-9307-c0cc696ca665 ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap km-dev:RefObjectMap_24594db1-12fa-49a2-beac-79dea4dd7c88 .
+
+km-dev:PredicateObjectMap_ec9561eb-6909-4d85-a8c8-b64c8b0581be rr:objectMap km-dev:RefObjectMap_24594db1-12fa-49a2-beac-79dea4dd7c88 .
+
+km-dev:TriplesMap_30d2e039-9413-4484-85eb-1c22ed924ff2 rr:predicateObjectMap km-dev:PredicateObjectMap_ec9561eb-6909-4d85-a8c8-b64c8b0581be .
+
+km-dev:PredicateObjectMap_ec9561eb-6909-4d85-a8c8-b64c8b0581be a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ec9561eb-6909-4d85-a8c8-b64c8b0581be .
+
+km-dev:PredicateObjectMap_e5893b30-d24f-41dd-a9cd-a3d4efe79505 rr:predicate rdfs:subClassOf .
+
+km-dev:RefObjectMap_3612f05d-65b1-4413-8e60-f196eb118287 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_7e2bfb10-9775-40ee-8846-6c8bb32de233 ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap km-dev:RefObjectMap_3612f05d-65b1-4413-8e60-f196eb118287 .
+
+km-dev:PredicateObjectMap_e5893b30-d24f-41dd-a9cd-a3d4efe79505 rr:objectMap km-dev:RefObjectMap_3612f05d-65b1-4413-8e60-f196eb118287 .
+
+km-dev:TriplesMap_30d2e039-9413-4484-85eb-1c22ed924ff2 rr:predicateObjectMap km-dev:PredicateObjectMap_e5893b30-d24f-41dd-a9cd-a3d4efe79505 .
+
+km-dev:PredicateObjectMap_e5893b30-d24f-41dd-a9cd-a3d4efe79505 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e5893b30-d24f-41dd-a9cd-a3d4efe79505 .
+
+km-dev:PredicateObjectMap_a7dc2bbf-bc82-4732-bc2b-88d92dea6c96 rr:predicate rdfs:subClassOf .
+
+km-dev:RefObjectMap_3cab52b7-5858-449e-addd-f3d7af01ba01 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_a7050353-e250-4bf5-b837-85209dc71ef5 ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap km-dev:RefObjectMap_3cab52b7-5858-449e-addd-f3d7af01ba01 .
+
+km-dev:PredicateObjectMap_a7dc2bbf-bc82-4732-bc2b-88d92dea6c96 rr:objectMap km-dev:RefObjectMap_3cab52b7-5858-449e-addd-f3d7af01ba01 .
+
+km-dev:TriplesMap_30d2e039-9413-4484-85eb-1c22ed924ff2 rr:predicateObjectMap km-dev:PredicateObjectMap_a7dc2bbf-bc82-4732-bc2b-88d92dea6c96 .
+
+km-dev:PredicateObjectMap_a7dc2bbf-bc82-4732-bc2b-88d92dea6c96 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a7dc2bbf-bc82-4732-bc2b-88d92dea6c96 .
+
+km-dev:PredicateObjectMap_f75d5b6b-8ef8-404f-9c19-9755b13d759c rr:predicate rdfs:subClassOf .
+
+km-dev:RefObjectMap_05cdee54-05ae-4c39-bdb8-b62433108c6a a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_fd4b477c-b885-4aab-a1d7-fe4482e5511f ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap km-dev:RefObjectMap_05cdee54-05ae-4c39-bdb8-b62433108c6a .
+
+km-dev:PredicateObjectMap_f75d5b6b-8ef8-404f-9c19-9755b13d759c rr:objectMap km-dev:RefObjectMap_05cdee54-05ae-4c39-bdb8-b62433108c6a .
+
+km-dev:TriplesMap_30d2e039-9413-4484-85eb-1c22ed924ff2 rr:predicateObjectMap km-dev:PredicateObjectMap_f75d5b6b-8ef8-404f-9c19-9755b13d759c .
+
+km-dev:PredicateObjectMap_f75d5b6b-8ef8-404f-9c19-9755b13d759c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f75d5b6b-8ef8-404f-9c19-9755b13d759c .
+
+km-dev:PredicateObjectMap_1da52570-3a32-4cdf-9893-1002a6b1924c rr:predicate rdfs:subClassOf .
+
+km-dev:RefObjectMap_53bce1ef-8f5a-432c-84ad-9b19776dc4be a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_339b6390-be4b-439f-be61-e254779cb8bf ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap km-dev:RefObjectMap_53bce1ef-8f5a-432c-84ad-9b19776dc4be .
+
+km-dev:PredicateObjectMap_1da52570-3a32-4cdf-9893-1002a6b1924c rr:objectMap km-dev:RefObjectMap_53bce1ef-8f5a-432c-84ad-9b19776dc4be .
+
+km-dev:TriplesMap_30d2e039-9413-4484-85eb-1c22ed924ff2 rr:predicateObjectMap km-dev:PredicateObjectMap_1da52570-3a32-4cdf-9893-1002a6b1924c .
+
+km-dev:PredicateObjectMap_1da52570-3a32-4cdf-9893-1002a6b1924c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1da52570-3a32-4cdf-9893-1002a6b1924c .
+
+km-dev:PredicateObjectMap_a64889a7-a4c1-4a68-bbbf-0c0aaf2b5a16 rr:predicate rdfs:subClassOf .
+
+km-dev:RefObjectMap_2d4b5fbd-3cf9-42bb-974a-0ea300a3e0e4 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_263b8381-76fa-47f6-a20d-6c63344d9c40 ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap km-dev:RefObjectMap_2d4b5fbd-3cf9-42bb-974a-0ea300a3e0e4 .
+
+km-dev:PredicateObjectMap_a64889a7-a4c1-4a68-bbbf-0c0aaf2b5a16 rr:objectMap km-dev:RefObjectMap_2d4b5fbd-3cf9-42bb-974a-0ea300a3e0e4 .
+
+km-dev:TriplesMap_30d2e039-9413-4484-85eb-1c22ed924ff2 rr:predicateObjectMap km-dev:PredicateObjectMap_a64889a7-a4c1-4a68-bbbf-0c0aaf2b5a16 .
+
+km-dev:PredicateObjectMap_a64889a7-a4c1-4a68-bbbf-0c0aaf2b5a16 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a64889a7-a4c1-4a68-bbbf-0c0aaf2b5a16 .
+
+km-dev:PredicateObjectMap_7dbba95b-95b6-4384-8d45-467396d0976c rr:predicate rdfs:subClassOf .
+
+km-dev:RefObjectMap_046ea009-4089-410e-abff-f8aba668f65e a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_3991092a-d53b-4134-a9fc-22cced9ca5e8 ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap km-dev:RefObjectMap_046ea009-4089-410e-abff-f8aba668f65e .
+
+km-dev:PredicateObjectMap_7dbba95b-95b6-4384-8d45-467396d0976c rr:objectMap km-dev:RefObjectMap_046ea009-4089-410e-abff-f8aba668f65e .
+
+km-dev:TriplesMap_30d2e039-9413-4484-85eb-1c22ed924ff2 rr:predicateObjectMap km-dev:PredicateObjectMap_7dbba95b-95b6-4384-8d45-467396d0976c .
+
+km-dev:PredicateObjectMap_7dbba95b-95b6-4384-8d45-467396d0976c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7dbba95b-95b6-4384-8d45-467396d0976c .
+
+km-dev:PredicateObjectMap_acef8a07-b83e-447c-a7e2-e8d6bd107d79 rr:predicate rdfs:subClassOf .
+
+km-dev:RefObjectMap_080382f9-8b3e-4994-997d-13b546ce06cc a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_e794186a-7d2f-49ef-813d-8c1ae3514f80 ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap km-dev:RefObjectMap_080382f9-8b3e-4994-997d-13b546ce06cc .
+
+km-dev:PredicateObjectMap_acef8a07-b83e-447c-a7e2-e8d6bd107d79 rr:objectMap km-dev:RefObjectMap_080382f9-8b3e-4994-997d-13b546ce06cc .
+
+km-dev:TriplesMap_30d2e039-9413-4484-85eb-1c22ed924ff2 rr:predicateObjectMap km-dev:PredicateObjectMap_acef8a07-b83e-447c-a7e2-e8d6bd107d79 .
+
+km-dev:PredicateObjectMap_acef8a07-b83e-447c-a7e2-e8d6bd107d79 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_acef8a07-b83e-447c-a7e2-e8d6bd107d79 .
+
+km-dev:PredicateObjectMap_84acf8df-ca47-494d-839f-4bc8c03861d1 rr:predicate rdfs:subClassOf .
+
+km-dev:RefObjectMap_a43b1eee-771d-4296-83c8-d7265976363c a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_8aefbcd0-6e47-4c98-a1e7-2519e0d13a39 ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap km-dev:RefObjectMap_a43b1eee-771d-4296-83c8-d7265976363c .
+
+km-dev:PredicateObjectMap_84acf8df-ca47-494d-839f-4bc8c03861d1 rr:objectMap km-dev:RefObjectMap_a43b1eee-771d-4296-83c8-d7265976363c .
+
+km-dev:TriplesMap_30d2e039-9413-4484-85eb-1c22ed924ff2 rr:predicateObjectMap km-dev:PredicateObjectMap_84acf8df-ca47-494d-839f-4bc8c03861d1 .
+
+km-dev:PredicateObjectMap_84acf8df-ca47-494d-839f-4bc8c03861d1 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_84acf8df-ca47-494d-839f-4bc8c03861d1 .
+
+km-dev:PredicateObjectMap_aa8e44a3-5d1d-4ca4-8d0b-7cc8bf0584f9 rr:predicate rdfs:subClassOf .
+
+km-dev:RefObjectMap_8a9ef349-3757-43f4-83d7-f5c2ad30edf0 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_942e4e84-c316-4398-abb5-6d962fd33549 ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap km-dev:RefObjectMap_8a9ef349-3757-43f4-83d7-f5c2ad30edf0 .
+
+km-dev:PredicateObjectMap_aa8e44a3-5d1d-4ca4-8d0b-7cc8bf0584f9 rr:objectMap km-dev:RefObjectMap_8a9ef349-3757-43f4-83d7-f5c2ad30edf0 .
+
+km-dev:TriplesMap_30d2e039-9413-4484-85eb-1c22ed924ff2 rr:predicateObjectMap km-dev:PredicateObjectMap_aa8e44a3-5d1d-4ca4-8d0b-7cc8bf0584f9 .
+
+km-dev:PredicateObjectMap_aa8e44a3-5d1d-4ca4-8d0b-7cc8bf0584f9 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_aa8e44a3-5d1d-4ca4-8d0b-7cc8bf0584f9 .
+
+km-dev:PredicateObjectMap_1688a90a-2bcc-4833-876f-81d04c2651b1 rr:predicate rdfs:subClassOf .
+
+km-dev:RefObjectMap_e6de568b-d6d2-4ab3-b7ff-9e81921a1270 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_30d65144-453e-41e2-9998-73298701fde9 ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap km-dev:RefObjectMap_e6de568b-d6d2-4ab3-b7ff-9e81921a1270 .
+
+km-dev:PredicateObjectMap_1688a90a-2bcc-4833-876f-81d04c2651b1 rr:objectMap km-dev:RefObjectMap_e6de568b-d6d2-4ab3-b7ff-9e81921a1270 .
+
+km-dev:TriplesMap_30d2e039-9413-4484-85eb-1c22ed924ff2 rr:predicateObjectMap km-dev:PredicateObjectMap_1688a90a-2bcc-4833-876f-81d04c2651b1 .
+
+km-dev:PredicateObjectMap_1688a90a-2bcc-4833-876f-81d04c2651b1 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1688a90a-2bcc-4833-876f-81d04c2651b1 .
+
+km-dev:PredicateObjectMap_0769ce58-dd60-47f9-bb44-ac2a7b494e5e rr:predicate <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#performedIn> .
+
+km-dev:RefObjectMap_e39ee40c-49c8-4a96-b9c0-6c0b8e744ea6 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_2300638f-a619-4be0-a472-009f1f01bbc5 ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap km-dev:RefObjectMap_e39ee40c-49c8-4a96-b9c0-6c0b8e744ea6 .
+
+km-dev:PredicateObjectMap_0769ce58-dd60-47f9-bb44-ac2a7b494e5e rr:objectMap km-dev:RefObjectMap_e39ee40c-49c8-4a96-b9c0-6c0b8e744ea6 .
+
+km-dev:TriplesMap_30d2e039-9413-4484-85eb-1c22ed924ff2 rr:predicateObjectMap km-dev:PredicateObjectMap_0769ce58-dd60-47f9-bb44-ac2a7b494e5e .
+
+km-dev:PredicateObjectMap_0769ce58-dd60-47f9-bb44-ac2a7b494e5e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0769ce58-dd60-47f9-bb44-ac2a7b494e5e .
+
+km-dev:TriplesMap_1a2ff009-8bcf-4313-b6fc-c9eafc43efd3 a rr:TriplesMap .
+
+_:node1d16nh4s9x1 km-dev:hasTriplesMap km-dev:TriplesMap_1a2ff009-8bcf-4313-b6fc-c9eafc43efd3 .
+
+km-dev:TriplesMap_1a2ff009-8bcf-4313-b6fc-c9eafc43efd3 km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x12 rr:tableName "HDI_dataset.txt" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasLogicalTable _:node1d16nh4s9x12 .
+
+km-dev:TriplesMap_1a2ff009-8bcf-4313-b6fc-c9eafc43efd3 rr:logicalTable _:node1d16nh4s9x12 ;
+	rr:subjectMap _:node1d16nh4s9x13 .
+
+_:node1d16nh4s9x1 km-dev:hasSubjectMap _:node1d16nh4s9x13 .
+
+_:node1d16nh4s9x13 km-dev:isPartOfMapping _:node1d16nh4s9x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilitiy1" ;
+	rr:class <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilitiy> ;
+	rr:template "{facility_uri}" .
+
+km-dev:PredicateObjectMap_fc51106b-2e76-4766-9c62-d0921bfa29fe rr:predicate rdfs:label .
+
+_:node1d16nh4s9x14 rr:column "structure" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap _:node1d16nh4s9x14 .
+
+km-dev:PredicateObjectMap_fc51106b-2e76-4766-9c62-d0921bfa29fe rr:objectMap _:node1d16nh4s9x14 .
+
+km-dev:TriplesMap_1a2ff009-8bcf-4313-b6fc-c9eafc43efd3 rr:predicateObjectMap km-dev:PredicateObjectMap_fc51106b-2e76-4766-9c62-d0921bfa29fe .
+
+km-dev:PredicateObjectMap_fc51106b-2e76-4766-9c62-d0921bfa29fe a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_fc51106b-2e76-4766-9c62-d0921bfa29fe .
+
+km-dev:TriplesMap_91f220b8-ed3f-474e-81b9-02926d77dec7 a rr:TriplesMap .
+
+_:node1d16nh4s9x1 km-dev:hasTriplesMap km-dev:TriplesMap_91f220b8-ed3f-474e-81b9-02926d77dec7 .
+
+km-dev:TriplesMap_91f220b8-ed3f-474e-81b9-02926d77dec7 km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x15 rr:tableName "HDI_dataset.txt" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasLogicalTable _:node1d16nh4s9x15 .
+
+km-dev:TriplesMap_91f220b8-ed3f-474e-81b9-02926d77dec7 rr:logicalTable _:node1d16nh4s9x15 ;
+	rr:subjectMap _:node1d16nh4s9x16 .
+
+_:node1d16nh4s9x1 km-dev:hasSubjectMap _:node1d16nh4s9x16 .
+
+_:node1d16nh4s9x16 km-dev:isPartOfMapping _:node1d16nh4s9x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#CongestiveHeartFailureStandardProcedure1" ;
+	rr:class <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#CongestiveHeartFailureStandardProcedure> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "CongestiveHeartFailureStandardProcedure1" .
+
+km-dev:PredicateObjectMap_b9d6ed96-71f4-4e0c-a583-be67eac6221f rr:predicate <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#30DaysMortality_QualityCriterion> .
+
+_:node1d16nh4s9x17 rr:column "Scompenso cardiaco congestizio: mortalità a 30 giorni " ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap _:node1d16nh4s9x17 .
+
+km-dev:PredicateObjectMap_b9d6ed96-71f4-4e0c-a583-be67eac6221f rr:objectMap _:node1d16nh4s9x17 .
+
+km-dev:TriplesMap_91f220b8-ed3f-474e-81b9-02926d77dec7 rr:predicateObjectMap km-dev:PredicateObjectMap_b9d6ed96-71f4-4e0c-a583-be67eac6221f .
+
+km-dev:PredicateObjectMap_b9d6ed96-71f4-4e0c-a583-be67eac6221f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b9d6ed96-71f4-4e0c-a583-be67eac6221f .
+
+km-dev:TriplesMap_f6194132-d12c-4ec3-8f28-7f558e4aff2d a rr:TriplesMap .
+
+_:node1d16nh4s9x1 km-dev:hasTriplesMap km-dev:TriplesMap_f6194132-d12c-4ec3-8f28-7f558e4aff2d .
+
+km-dev:TriplesMap_f6194132-d12c-4ec3-8f28-7f558e4aff2d km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x18 rr:tableName "HDI_dataset.txt" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasLogicalTable _:node1d16nh4s9x18 .
+
+km-dev:TriplesMap_f6194132-d12c-4ec3-8f28-7f558e4aff2d rr:logicalTable _:node1d16nh4s9x18 ;
+	rr:subjectMap _:node1d16nh4s9x19 .
+
+_:node1d16nh4s9x1 km-dev:hasSubjectMap _:node1d16nh4s9x19 .
+
+_:node1d16nh4s9x19 km-dev:isPartOfMapping _:node1d16nh4s9x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ColonTumorSurgery1" ;
+	rr:class <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ColonTumorSurgery> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "ColonTumorSurgery1" .
+
+km-dev:PredicateObjectMap_a2e333f5-c7ed-40e2-a4e1-4f3e21d0ad97 rr:predicate <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#30DaysMortality_QualityCriterion> .
+
+_:node1d16nh4s9x20 rr:column "Intervento chirurgico per TM colon: mortalità a 30 giorni " ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap _:node1d16nh4s9x20 .
+
+km-dev:PredicateObjectMap_a2e333f5-c7ed-40e2-a4e1-4f3e21d0ad97 rr:objectMap _:node1d16nh4s9x20 .
+
+km-dev:TriplesMap_f6194132-d12c-4ec3-8f28-7f558e4aff2d rr:predicateObjectMap km-dev:PredicateObjectMap_a2e333f5-c7ed-40e2-a4e1-4f3e21d0ad97 .
+
+km-dev:PredicateObjectMap_a2e333f5-c7ed-40e2-a4e1-4f3e21d0ad97 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a2e333f5-c7ed-40e2-a4e1-4f3e21d0ad97 .
+
+km-dev:TriplesMap_83068a72-2a2b-4be6-868f-b83b1a9e483f a rr:TriplesMap .
+
+_:node1d16nh4s9x1 km-dev:hasTriplesMap km-dev:TriplesMap_83068a72-2a2b-4be6-868f-b83b1a9e483f .
+
+km-dev:TriplesMap_83068a72-2a2b-4be6-868f-b83b1a9e483f km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x21 rr:tableName "HDI_dataset.txt" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasLogicalTable _:node1d16nh4s9x21 .
+
+km-dev:TriplesMap_83068a72-2a2b-4be6-868f-b83b1a9e483f rr:logicalTable _:node1d16nh4s9x21 ;
+	rr:subjectMap _:node1d16nh4s9x22 .
+
+_:node1d16nh4s9x1 km-dev:hasSubjectMap _:node1d16nh4s9x22 .
+
+_:node1d16nh4s9x22 km-dev:isPartOfMapping _:node1d16nh4s9x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#BirthDeliveryProcedure2" ;
+	rr:class <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#BirthDeliveryProcedure> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "BirthDeliveryProcedure2" .
+
+km-dev:PredicateObjectMap_6dbe42af-4613-4da6-b97a-40c102253573 rr:predicate <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#DeliveryComplicationOccurrence_QualityCriterion> .
+
+_:node1d16nh4s9x23 rr:column "Parto naturale: % complicanze durante il parto e il puerperio " ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap _:node1d16nh4s9x23 .
+
+km-dev:PredicateObjectMap_6dbe42af-4613-4da6-b97a-40c102253573 rr:objectMap _:node1d16nh4s9x23 .
+
+km-dev:TriplesMap_83068a72-2a2b-4be6-868f-b83b1a9e483f rr:predicateObjectMap km-dev:PredicateObjectMap_6dbe42af-4613-4da6-b97a-40c102253573 .
+
+km-dev:PredicateObjectMap_6dbe42af-4613-4da6-b97a-40c102253573 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6dbe42af-4613-4da6-b97a-40c102253573 .
+
+km-dev:TriplesMap_0491634c-1f4e-4901-b721-23faeaa3f2fb a rr:TriplesMap .
+
+_:node1d16nh4s9x1 km-dev:hasTriplesMap km-dev:TriplesMap_0491634c-1f4e-4901-b721-23faeaa3f2fb .
+
+km-dev:TriplesMap_0491634c-1f4e-4901-b721-23faeaa3f2fb km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x24 rr:tableName "HDI_dataset.txt" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasLogicalTable _:node1d16nh4s9x24 .
+
+km-dev:TriplesMap_0491634c-1f4e-4901-b721-23faeaa3f2fb rr:logicalTable _:node1d16nh4s9x24 ;
+	rr:subjectMap _:node1d16nh4s9x25 .
+
+_:node1d16nh4s9x1 km-dev:hasSubjectMap _:node1d16nh4s9x25 .
+
+_:node1d16nh4s9x25 km-dev:isPartOfMapping _:node1d16nh4s9x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#BirthDeliveryProcedure1" ;
+	rr:class <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#BirthDeliveryProcedure> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "BirthDeliveryProcedure1" .
+
+km-dev:PredicateObjectMap_237b6b1a-fdc2-4fc1-8bc5-4d02586369b9 rr:predicate <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#DeliveryComplicationOccurrence_QualityCriterion> .
+
+_:node1d16nh4s9x26 rr:column "Parto cesareo: % complicanze durante il parto e il puerperio " ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap _:node1d16nh4s9x26 .
+
+km-dev:PredicateObjectMap_237b6b1a-fdc2-4fc1-8bc5-4d02586369b9 rr:objectMap _:node1d16nh4s9x26 .
+
+km-dev:TriplesMap_0491634c-1f4e-4901-b721-23faeaa3f2fb rr:predicateObjectMap km-dev:PredicateObjectMap_237b6b1a-fdc2-4fc1-8bc5-4d02586369b9 .
+
+km-dev:PredicateObjectMap_237b6b1a-fdc2-4fc1-8bc5-4d02586369b9 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_237b6b1a-fdc2-4fc1-8bc5-4d02586369b9 .
+
+km-dev:PredicateObjectMap_c11310c8-c319-4ab5-8e17-27aa9f759297 rr:predicate <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#CaesarianProcedureOccurrence_QualityCriterion> .
+
+_:node1d16nh4s9x27 rr:column "taglio cesareo primario: % parti" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap _:node1d16nh4s9x27 .
+
+km-dev:PredicateObjectMap_c11310c8-c319-4ab5-8e17-27aa9f759297 rr:objectMap _:node1d16nh4s9x27 .
+
+km-dev:TriplesMap_0491634c-1f4e-4901-b721-23faeaa3f2fb rr:predicateObjectMap km-dev:PredicateObjectMap_c11310c8-c319-4ab5-8e17-27aa9f759297 .
+
+km-dev:PredicateObjectMap_c11310c8-c319-4ab5-8e17-27aa9f759297 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c11310c8-c319-4ab5-8e17-27aa9f759297 .
+
+km-dev:TriplesMap_69684059-3518-4178-900c-c060606c60de a rr:TriplesMap .
+
+_:node1d16nh4s9x1 km-dev:hasTriplesMap km-dev:TriplesMap_69684059-3518-4178-900c-c060606c60de .
+
+km-dev:TriplesMap_69684059-3518-4178-900c-c060606c60de km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x28 rr:tableName "HDI_dataset.txt" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasLogicalTable _:node1d16nh4s9x28 .
+
+km-dev:TriplesMap_69684059-3518-4178-900c-c060606c60de rr:logicalTable _:node1d16nh4s9x28 ;
+	rr:subjectMap _:node1d16nh4s9x29 .
+
+_:node1d16nh4s9x1 km-dev:hasSubjectMap _:node1d16nh4s9x29 .
+
+_:node1d16nh4s9x29 km-dev:isPartOfMapping _:node1d16nh4s9x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#AneurysmRepairSurgery1" ;
+	rr:class <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#AneurysmRepairSurgery> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "AneurysmRepairSurgery1" .
+
+km-dev:PredicateObjectMap_1578f3ee-e9d4-419a-ab5c-7c8af8a40a51 rr:predicate <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#30DaysMortality_QualityCriterion> .
+
+_:node1d16nh4s9x30 rr:column "Riparazione di aneurisma non rotto dell aorta addominale: mortalità a 30 giorni " ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap _:node1d16nh4s9x30 .
+
+km-dev:PredicateObjectMap_1578f3ee-e9d4-419a-ab5c-7c8af8a40a51 rr:objectMap _:node1d16nh4s9x30 .
+
+km-dev:TriplesMap_69684059-3518-4178-900c-c060606c60de rr:predicateObjectMap km-dev:PredicateObjectMap_1578f3ee-e9d4-419a-ab5c-7c8af8a40a51 .
+
+km-dev:PredicateObjectMap_1578f3ee-e9d4-419a-ab5c-7c8af8a40a51 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1578f3ee-e9d4-419a-ab5c-7c8af8a40a51 .
+
+km-dev:TriplesMap_fd4b477c-b885-4aab-a1d7-fe4482e5511f a rr:TriplesMap .
+
+_:node1d16nh4s9x1 km-dev:hasTriplesMap km-dev:TriplesMap_fd4b477c-b885-4aab-a1d7-fe4482e5511f .
+
+km-dev:TriplesMap_fd4b477c-b885-4aab-a1d7-fe4482e5511f km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x31 rr:tableName "HDI_dataset.txt" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasLogicalTable _:node1d16nh4s9x31 .
+
+km-dev:TriplesMap_fd4b477c-b885-4aab-a1d7-fe4482e5511f rr:logicalTable _:node1d16nh4s9x31 ;
+	rr:subjectMap _:node1d16nh4s9x32 .
+
+_:node1d16nh4s9x1 km-dev:hasSubjectMap _:node1d16nh4s9x32 .
+
+_:node1d16nh4s9x32 km-dev:isPartOfMapping _:node1d16nh4s9x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#MammaryTumorSurgery1" ;
+	rr:class <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#MammaryTumorSurgery> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "MammaryTumorSurgery1" .
+
+km-dev:PredicateObjectMap_310bca0a-fb7d-4227-979e-b2f538a68788 rr:predicate <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#SecondaryProcedureOccurrenceBy120Days_QualityCriterion> .
+
+_:node1d16nh4s9x33 rr:column "chirurgia conservativa per TM mammella: % nuovi interventi di resezione entro 120 giorni" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap _:node1d16nh4s9x33 .
+
+km-dev:PredicateObjectMap_310bca0a-fb7d-4227-979e-b2f538a68788 rr:objectMap _:node1d16nh4s9x33 .
+
+km-dev:TriplesMap_fd4b477c-b885-4aab-a1d7-fe4482e5511f rr:predicateObjectMap km-dev:PredicateObjectMap_310bca0a-fb7d-4227-979e-b2f538a68788 .
+
+km-dev:PredicateObjectMap_310bca0a-fb7d-4227-979e-b2f538a68788 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_310bca0a-fb7d-4227-979e-b2f538a68788 .
+
+km-dev:PredicateObjectMap_06522b0e-68dc-4a9a-8206-5d5e4443c7ab rr:predicate <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#135AnnualProcedures_QualityCriterion> .
+
+_:node1d16nh4s9x34 rr:column "Chirurgia TM mammella: % interventi effettuati in reparti con volume di attività superiore ai 135 casi  " ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap _:node1d16nh4s9x34 .
+
+km-dev:PredicateObjectMap_06522b0e-68dc-4a9a-8206-5d5e4443c7ab rr:objectMap _:node1d16nh4s9x34 .
+
+km-dev:TriplesMap_fd4b477c-b885-4aab-a1d7-fe4482e5511f rr:predicateObjectMap km-dev:PredicateObjectMap_06522b0e-68dc-4a9a-8206-5d5e4443c7ab .
+
+km-dev:PredicateObjectMap_06522b0e-68dc-4a9a-8206-5d5e4443c7ab a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_06522b0e-68dc-4a9a-8206-5d5e4443c7ab .
+
+km-dev:TriplesMap_54adf97e-d115-4a5a-b5ad-d4203f4dc1e5 a rr:TriplesMap .
+
+_:node1d16nh4s9x1 km-dev:hasTriplesMap km-dev:TriplesMap_54adf97e-d115-4a5a-b5ad-d4203f4dc1e5 .
+
+km-dev:TriplesMap_54adf97e-d115-4a5a-b5ad-d4203f4dc1e5 km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x35 rr:tableName "HDI_dataset.txt" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasLogicalTable _:node1d16nh4s9x35 .
+
+km-dev:TriplesMap_54adf97e-d115-4a5a-b5ad-d4203f4dc1e5 rr:logicalTable _:node1d16nh4s9x35 ;
+	rr:subjectMap _:node1d16nh4s9x36 .
+
+_:node1d16nh4s9x1 km-dev:hasSubjectMap _:node1d16nh4s9x36 .
+
+_:node1d16nh4s9x36 km-dev:isPartOfMapping _:node1d16nh4s9x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Tibia/FibulaFractureSurgery1" ;
+	rr:class <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Tibia/FibulaFractureSurgery> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "FibulaFractureSurgery1" .
+
+km-dev:PredicateObjectMap_23b5f9e9-361b-4459-9a6e-b298b246e186 rr:predicate <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ProcedureWaitingTime_QualityCriterion> .
+
+_:node1d16nh4s9x37 rr:column "Frattura della Tibia e Perone: tempi di attesa per intervento chirurgico " ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap _:node1d16nh4s9x37 .
+
+km-dev:PredicateObjectMap_23b5f9e9-361b-4459-9a6e-b298b246e186 rr:objectMap _:node1d16nh4s9x37 .
+
+km-dev:TriplesMap_54adf97e-d115-4a5a-b5ad-d4203f4dc1e5 rr:predicateObjectMap km-dev:PredicateObjectMap_23b5f9e9-361b-4459-9a6e-b298b246e186 .
+
+km-dev:PredicateObjectMap_23b5f9e9-361b-4459-9a6e-b298b246e186 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_23b5f9e9-361b-4459-9a6e-b298b246e186 .
+
+km-dev:TriplesMap_7746afbe-d432-4667-9307-c0cc696ca665 a rr:TriplesMap .
+
+_:node1d16nh4s9x1 km-dev:hasTriplesMap km-dev:TriplesMap_7746afbe-d432-4667-9307-c0cc696ca665 .
+
+km-dev:TriplesMap_7746afbe-d432-4667-9307-c0cc696ca665 km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x38 rr:tableName "HDI_dataset.txt" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasLogicalTable _:node1d16nh4s9x38 .
+
+km-dev:TriplesMap_7746afbe-d432-4667-9307-c0cc696ca665 rr:logicalTable _:node1d16nh4s9x38 ;
+	rr:subjectMap _:node1d16nh4s9x39 .
+
+_:node1d16nh4s9x1 km-dev:hasSubjectMap _:node1d16nh4s9x39 .
+
+_:node1d16nh4s9x39 km-dev:isPartOfMapping _:node1d16nh4s9x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#LungTumorSurgery1" ;
+	rr:class <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#LungTumorSurgery> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "LungTumorSurgery1" .
+
+km-dev:PredicateObjectMap_93306179-e0c1-438b-b017-01e3be4129a6 rr:predicate <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#30DaysMortality_QualityCriterion> .
+
+_:node1d16nh4s9x40 rr:column "Intervento chirurgico per TM polmone: mortalità a 30 giorni " ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap _:node1d16nh4s9x40 .
+
+km-dev:PredicateObjectMap_93306179-e0c1-438b-b017-01e3be4129a6 rr:objectMap _:node1d16nh4s9x40 .
+
+km-dev:TriplesMap_7746afbe-d432-4667-9307-c0cc696ca665 rr:predicateObjectMap km-dev:PredicateObjectMap_93306179-e0c1-438b-b017-01e3be4129a6 .
+
+km-dev:PredicateObjectMap_93306179-e0c1-438b-b017-01e3be4129a6 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_93306179-e0c1-438b-b017-01e3be4129a6 .
+
+km-dev:TriplesMap_7e2bfb10-9775-40ee-8846-6c8bb32de233 a rr:TriplesMap .
+
+_:node1d16nh4s9x1 km-dev:hasTriplesMap km-dev:TriplesMap_7e2bfb10-9775-40ee-8846-6c8bb32de233 .
+
+km-dev:TriplesMap_7e2bfb10-9775-40ee-8846-6c8bb32de233 km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x41 rr:tableName "HDI_dataset.txt" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasLogicalTable _:node1d16nh4s9x41 .
+
+km-dev:TriplesMap_7e2bfb10-9775-40ee-8846-6c8bb32de233 rr:logicalTable _:node1d16nh4s9x41 ;
+	rr:subjectMap _:node1d16nh4s9x42 .
+
+_:node1d16nh4s9x1 km-dev:hasSubjectMap _:node1d16nh4s9x42 .
+
+_:node1d16nh4s9x42 km-dev:isPartOfMapping _:node1d16nh4s9x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ChronicObstructivePulmonaryDiseaseStandardProcedure1" ;
+	rr:class <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ChronicObstructivePulmonaryDiseaseStandardProcedure> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "ChronicObstructivePulmonaryDiseaseStandardProcedure1" .
+
+km-dev:PredicateObjectMap_c24f1603-1fbf-4d77-9925-65df2ab86a02 rr:predicate <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#30DaysMortality_QualityCriterion> .
+
+_:node1d16nh4s9x43 rr:column "BPCO riacutizzata: mortalità a 30 giorni " ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap _:node1d16nh4s9x43 .
+
+km-dev:PredicateObjectMap_c24f1603-1fbf-4d77-9925-65df2ab86a02 rr:objectMap _:node1d16nh4s9x43 .
+
+km-dev:TriplesMap_7e2bfb10-9775-40ee-8846-6c8bb32de233 rr:predicateObjectMap km-dev:PredicateObjectMap_c24f1603-1fbf-4d77-9925-65df2ab86a02 .
+
+km-dev:PredicateObjectMap_c24f1603-1fbf-4d77-9925-65df2ab86a02 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c24f1603-1fbf-4d77-9925-65df2ab86a02 .
+
+km-dev:TriplesMap_942e4e84-c316-4398-abb5-6d962fd33549 a rr:TriplesMap .
+
+_:node1d16nh4s9x1 km-dev:hasTriplesMap km-dev:TriplesMap_942e4e84-c316-4398-abb5-6d962fd33549 .
+
+km-dev:TriplesMap_942e4e84-c316-4398-abb5-6d962fd33549 km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x44 rr:tableName "HDI_dataset.txt" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasLogicalTable _:node1d16nh4s9x44 .
+
+km-dev:TriplesMap_942e4e84-c316-4398-abb5-6d962fd33549 rr:logicalTable _:node1d16nh4s9x44 ;
+	rr:subjectMap _:node1d16nh4s9x45 .
+
+_:node1d16nh4s9x1 km-dev:hasSubjectMap _:node1d16nh4s9x45 .
+
+_:node1d16nh4s9x45 km-dev:isPartOfMapping _:node1d16nh4s9x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#StomachTumorSurgery1" ;
+	rr:class <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#StomachTumorSurgery> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "StomachTumorSurgery1" .
+
+km-dev:PredicateObjectMap_d797b0ac-2f43-4ef2-8ec4-2f327c57e07c rr:predicate <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#30DaysMortality_QualityCriterion> .
+
+_:node1d16nh4s9x46 rr:column "Intervento chirurgico per TM stomaco: mortalità a 30 giorni " ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap _:node1d16nh4s9x46 .
+
+km-dev:PredicateObjectMap_d797b0ac-2f43-4ef2-8ec4-2f327c57e07c rr:objectMap _:node1d16nh4s9x46 .
+
+km-dev:TriplesMap_942e4e84-c316-4398-abb5-6d962fd33549 rr:predicateObjectMap km-dev:PredicateObjectMap_d797b0ac-2f43-4ef2-8ec4-2f327c57e07c .
+
+km-dev:PredicateObjectMap_d797b0ac-2f43-4ef2-8ec4-2f327c57e07c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d797b0ac-2f43-4ef2-8ec4-2f327c57e07c .
+
+km-dev:TriplesMap_30d65144-453e-41e2-9998-73298701fde9 a rr:TriplesMap .
+
+_:node1d16nh4s9x1 km-dev:hasTriplesMap km-dev:TriplesMap_30d65144-453e-41e2-9998-73298701fde9 .
+
+km-dev:TriplesMap_30d65144-453e-41e2-9998-73298701fde9 km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x47 rr:tableName "HDI_dataset.txt" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasLogicalTable _:node1d16nh4s9x47 .
+
+km-dev:TriplesMap_30d65144-453e-41e2-9998-73298701fde9 rr:logicalTable _:node1d16nh4s9x47 ;
+	rr:subjectMap _:node1d16nh4s9x48 .
+
+_:node1d16nh4s9x1 km-dev:hasSubjectMap _:node1d16nh4s9x48 .
+
+_:node1d16nh4s9x48 km-dev:isPartOfMapping _:node1d16nh4s9x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#CoronaryArteryBypassSurgery1" ;
+	rr:class <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#CoronaryArteryBypassSurgery> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "CoronaryArteryBypassSurgery1" .
+
+km-dev:PredicateObjectMap_36bc2c5d-ed5b-4d0b-8d5b-f0d35f9bf2bf rr:predicate <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#30DaysMortality_QualityCriterion> .
+
+_:node1d16nh4s9x49 rr:column "By-pass Aortocoronarico isolato: mortalità a 30 giorni " ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap _:node1d16nh4s9x49 .
+
+km-dev:PredicateObjectMap_36bc2c5d-ed5b-4d0b-8d5b-f0d35f9bf2bf rr:objectMap _:node1d16nh4s9x49 .
+
+km-dev:TriplesMap_30d65144-453e-41e2-9998-73298701fde9 rr:predicateObjectMap km-dev:PredicateObjectMap_36bc2c5d-ed5b-4d0b-8d5b-f0d35f9bf2bf .
+
+km-dev:PredicateObjectMap_36bc2c5d-ed5b-4d0b-8d5b-f0d35f9bf2bf a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_36bc2c5d-ed5b-4d0b-8d5b-f0d35f9bf2bf .
+
+km-dev:TriplesMap_a7050353-e250-4bf5-b837-85209dc71ef5 a rr:TriplesMap .
+
+_:node1d16nh4s9x1 km-dev:hasTriplesMap km-dev:TriplesMap_a7050353-e250-4bf5-b837-85209dc71ef5 .
+
+km-dev:TriplesMap_a7050353-e250-4bf5-b837-85209dc71ef5 km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x50 rr:tableName "HDI_dataset.txt" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasLogicalTable _:node1d16nh4s9x50 .
+
+km-dev:TriplesMap_a7050353-e250-4bf5-b837-85209dc71ef5 rr:logicalTable _:node1d16nh4s9x50 ;
+	rr:subjectMap _:node1d16nh4s9x51 .
+
+_:node1d16nh4s9x1 km-dev:hasSubjectMap _:node1d16nh4s9x51 .
+
+_:node1d16nh4s9x51 km-dev:isPartOfMapping _:node1d16nh4s9x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#IschemicStrokeStandardProcedure1" ;
+	rr:class <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#IschemicStrokeStandardProcedure> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "IschemicStrokeStandardProcedure1" .
+
+km-dev:PredicateObjectMap_3fe784b9-86c8-44ed-8b93-0e17a926c6cf rr:predicate <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#30DaysMortality_QualityCriterion> .
+
+_:node1d16nh4s9x52 rr:column "Ictus ischemico: mortalità a 30 giorni " ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap _:node1d16nh4s9x52 .
+
+km-dev:PredicateObjectMap_3fe784b9-86c8-44ed-8b93-0e17a926c6cf rr:objectMap _:node1d16nh4s9x52 .
+
+km-dev:TriplesMap_a7050353-e250-4bf5-b837-85209dc71ef5 rr:predicateObjectMap km-dev:PredicateObjectMap_3fe784b9-86c8-44ed-8b93-0e17a926c6cf .
+
+km-dev:PredicateObjectMap_3fe784b9-86c8-44ed-8b93-0e17a926c6cf a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3fe784b9-86c8-44ed-8b93-0e17a926c6cf .
+
+km-dev:TriplesMap_263b8381-76fa-47f6-a20d-6c63344d9c40 a rr:TriplesMap .
+
+_:node1d16nh4s9x1 km-dev:hasTriplesMap km-dev:TriplesMap_263b8381-76fa-47f6-a20d-6c63344d9c40 .
+
+km-dev:TriplesMap_263b8381-76fa-47f6-a20d-6c63344d9c40 km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x53 rr:tableName "HDI_dataset.txt" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasLogicalTable _:node1d16nh4s9x53 .
+
+km-dev:TriplesMap_263b8381-76fa-47f6-a20d-6c63344d9c40 rr:logicalTable _:node1d16nh4s9x53 ;
+	rr:subjectMap _:node1d16nh4s9x54 .
+
+_:node1d16nh4s9x1 km-dev:hasSubjectMap _:node1d16nh4s9x54 .
+
+_:node1d16nh4s9x54 km-dev:isPartOfMapping _:node1d16nh4s9x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#CraniotomySurgery1" ;
+	rr:class <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#CraniotomySurgery> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "CraniotomySurgery1" .
+
+km-dev:PredicateObjectMap_f9943aa7-0497-4589-a4fc-c7a8127c6829 rr:predicate <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#30DaysMortality_QualityCriterion> .
+
+_:node1d16nh4s9x55 rr:column "Intervento chirurgico per T cerebrale: mortalità a 30 giorni dall'intervento di craniotomia " ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap _:node1d16nh4s9x55 .
+
+km-dev:PredicateObjectMap_f9943aa7-0497-4589-a4fc-c7a8127c6829 rr:objectMap _:node1d16nh4s9x55 .
+
+km-dev:TriplesMap_263b8381-76fa-47f6-a20d-6c63344d9c40 rr:predicateObjectMap km-dev:PredicateObjectMap_f9943aa7-0497-4589-a4fc-c7a8127c6829 .
+
+km-dev:PredicateObjectMap_f9943aa7-0497-4589-a4fc-c7a8127c6829 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f9943aa7-0497-4589-a4fc-c7a8127c6829 .
+
+km-dev:TriplesMap_3991092a-d53b-4134-a9fc-22cced9ca5e8 a rr:TriplesMap .
+
+_:node1d16nh4s9x1 km-dev:hasTriplesMap km-dev:TriplesMap_3991092a-d53b-4134-a9fc-22cced9ca5e8 .
+
+km-dev:TriplesMap_3991092a-d53b-4134-a9fc-22cced9ca5e8 km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x56 rr:tableName "HDI_dataset.txt" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasLogicalTable _:node1d16nh4s9x56 .
+
+km-dev:TriplesMap_3991092a-d53b-4134-a9fc-22cced9ca5e8 rr:logicalTable _:node1d16nh4s9x56 ;
+	rr:subjectMap _:node1d16nh4s9x57 .
+
+_:node1d16nh4s9x1 km-dev:hasSubjectMap _:node1d16nh4s9x57 .
+
+_:node1d16nh4s9x57 km-dev:isPartOfMapping _:node1d16nh4s9x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#FemoralNeckFractureSurgery1" ;
+	rr:class <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#FemoralNeckFractureSurgery> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "FemoralNeckFractureSurgery1" .
+
+km-dev:PredicateObjectMap_1ede313b-0534-4389-9269-e1574cf2edb3 rr:predicate <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#FractureProcedureBy2Days_QualityCriterion> .
+
+_:node1d16nh4s9x58 rr:column "Frattura del collo del femore: intervento chirurgico entro 2 giorni " ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap _:node1d16nh4s9x58 .
+
+km-dev:PredicateObjectMap_1ede313b-0534-4389-9269-e1574cf2edb3 rr:objectMap _:node1d16nh4s9x58 .
+
+km-dev:TriplesMap_3991092a-d53b-4134-a9fc-22cced9ca5e8 rr:predicateObjectMap km-dev:PredicateObjectMap_1ede313b-0534-4389-9269-e1574cf2edb3 .
+
+km-dev:PredicateObjectMap_1ede313b-0534-4389-9269-e1574cf2edb3 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1ede313b-0534-4389-9269-e1574cf2edb3 .
+
+km-dev:TriplesMap_8aefbcd0-6e47-4c98-a1e7-2519e0d13a39 a rr:TriplesMap .
+
+_:node1d16nh4s9x1 km-dev:hasTriplesMap km-dev:TriplesMap_8aefbcd0-6e47-4c98-a1e7-2519e0d13a39 .
+
+km-dev:TriplesMap_8aefbcd0-6e47-4c98-a1e7-2519e0d13a39 km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x59 rr:tableName "HDI_dataset.txt" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasLogicalTable _:node1d16nh4s9x59 .
+
+km-dev:TriplesMap_8aefbcd0-6e47-4c98-a1e7-2519e0d13a39 rr:logicalTable _:node1d16nh4s9x59 ;
+	rr:subjectMap _:node1d16nh4s9x60 .
+
+_:node1d16nh4s9x1 km-dev:hasSubjectMap _:node1d16nh4s9x60 .
+
+_:node1d16nh4s9x60 km-dev:isPartOfMapping _:node1d16nh4s9x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ValvuloplastySurgery1" ;
+	rr:class <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ValvuloplastySurgery> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "ValvuloplastySurgery1" .
+
+km-dev:PredicateObjectMap_4408a690-557c-4fc9-8eaf-96af7d01cf9c rr:predicate <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#30DaysMortality_QualityCriterion> .
+
+_:node1d16nh4s9x61 rr:column "Valvuloplastica o sostituzione di valvole cardiache: mortalità a 30 giorni " ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasObjectMap _:node1d16nh4s9x61 .
+
+km-dev:PredicateObjectMap_4408a690-557c-4fc9-8eaf-96af7d01cf9c rr:objectMap _:node1d16nh4s9x61 .
+
+km-dev:TriplesMap_8aefbcd0-6e47-4c98-a1e7-2519e0d13a39 rr:predicateObjectMap km-dev:PredicateObjectMap_4408a690-557c-4fc9-8eaf-96af7d01cf9c .
+
+km-dev:PredicateObjectMap_4408a690-557c-4fc9-8eaf-96af7d01cf9c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4408a690-557c-4fc9-8eaf-96af7d01cf9c .
+
+km-dev:TriplesMap_2300638f-a619-4be0-a472-009f1f01bbc5 a rr:TriplesMap .
+
+_:node1d16nh4s9x1 km-dev:hasTriplesMap km-dev:TriplesMap_2300638f-a619-4be0-a472-009f1f01bbc5 .
+
+km-dev:TriplesMap_2300638f-a619-4be0-a472-009f1f01bbc5 km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x62 rr:tableName "HDI_dataset.txt" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d16nh4s9x1 .
+
+_:node1d16nh4s9x1 km-dev:hasLogicalTable _:node1d16nh4s9x62 .
+
+km-dev:TriplesMap_2300638f-a619-4be0-a472-009f1f01bbc5 rr:logicalTable _:node1d16nh4s9x62 ;
+	rr:subjectMap _:node1d16nh4s9x63 .
+
+_:node1d16nh4s9x1 km-dev:hasSubjectMap _:node1d16nh4s9x63 .
+
+_:node1d16nh4s9x63 km-dev:isPartOfMapping _:node1d16nh4s9x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilityDepartment1" ;
+	rr:class <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilityDepartment> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "HealthcareFacilityDepartment1" .

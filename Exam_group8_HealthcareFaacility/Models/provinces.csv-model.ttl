@@ -1,0 +1,1619 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix geo: <http://www.georss.org/georss/> .
+@prefix gml: <http://www.opengis.net/gml/> .
+@prefix geo2003: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix karma_geospatial: <http://isi.edu/integration/karma/ontologies/model/current#geospatial/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1d16ejhjlx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "provinces.csv" ;
+	km-dev:modelPublicationTime "1547478615669"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"CH. ONCOLOGICA\"}],[{\"columnName\":\"GRAVIDANZA E PARTO\"}],[{\"columnName\":\"OSTEOMUSCOLARE\"}],[{\"columnName\":\"RESPIRATORIO\"}],[{\"columnName\":\"CH. GENERALE\"}],[{\"columnName\":\"NERVOSO\"}],[{\"columnName\":\"city\"}],[{\"columnName\":\"province\"}],[{\"columnName\":\"CARDIOCIRCOLATORIO\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"CH. ONCOLOGICA\"}],[{\"columnName\":\"GRAVIDANZA E PARTO\"}],[{\"columnName\":\"OSTEOMUSCOLARE\"}],[{\"columnName\":\"RESPIRATORIO\"}],[{\"columnName\":\"CH. GENERALE\"}],[{\"columnName\":\"NERVOSO\"}],[{\"columnName\":\"city\"}],[{\"columnName\":\"province\"}],[{\"columnName\":\"CARDIOCIRCOLATORIO\"}]]" ;
+	km-dev:hasModelLabel "provinces.csv" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"city\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#City\",
+                    \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#City1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#City/City1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"city\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"city\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"province\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Province\",
+                    \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Province1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Province/Province1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"province\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"province\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"NERVOSO\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [
+                    {
+                        \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Neurology\",
+                        \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Neurology1\",
+                        \"isPrimary\": true,
+                        \"isProvenance\": false,
+                        \"FullType\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#value\"
+                    },
+                    {
+                        \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Neurology\",
+                        \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Neurology1\",
+                        \"isPrimary\": false,
+                        \"FullType\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Presence\",
+                        \"DomainLabel\": \"Neurology1\"
+                    }
+                ]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"NERVOSO\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"NERVOSO\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"RESPIRATORIO\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [
+                    {
+                        \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Respiratory\",
+                        \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Respiratory1\",
+                        \"isPrimary\": true,
+                        \"isProvenance\": false,
+                        \"FullType\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#value\"
+                    },
+                    {
+                        \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Respiratory\",
+                        \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Respiratory1\",
+                        \"isPrimary\": false,
+                        \"FullType\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Presence\",
+                        \"DomainLabel\": \"Respiratory1\"
+                    }
+                ]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RESPIRATORIO\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RESPIRATORIO\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"CH. GENERALE\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [
+                    {
+                        \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#GeneralSurgery\",
+                        \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#GeneralSurgery1\",
+                        \"isPrimary\": true,
+                        \"isProvenance\": false,
+                        \"FullType\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#value\"
+                    },
+                    {
+                        \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#GeneralSurgery\",
+                        \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#GeneralSurgery1\",
+                        \"isPrimary\": false,
+                        \"FullType\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Presence\",
+                        \"DomainLabel\": \"GeneralSurgery1\"
+                    }
+                ]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CH. GENERALE\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CH. GENERALE\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"CH. ONCOLOGICA\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [
+                    {
+                        \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#OncologicSurgery\",
+                        \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#OncologicSurgery1\",
+                        \"isPrimary\": true,
+                        \"isProvenance\": false,
+                        \"FullType\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#value\"
+                    },
+                    {
+                        \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#OncologicSurgery\",
+                        \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#OncologicSurgery1\",
+                        \"isPrimary\": false,
+                        \"FullType\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Presence\",
+                        \"DomainLabel\": \"OncologicSurgery1\"
+                    }
+                ]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CH. ONCOLOGICA\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CH. ONCOLOGICA\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"GRAVIDANZA E PARTO\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [
+                    {
+                        \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Obstetrics\",
+                        \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Obstetrics1\",
+                        \"isPrimary\": true,
+                        \"isProvenance\": false,
+                        \"FullType\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#value\"
+                    },
+                    {
+                        \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Obstetrics\",
+                        \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Obstetrics1\",
+                        \"isPrimary\": false,
+                        \"FullType\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Presence\",
+                        \"DomainLabel\": \"Obstetrics1\"
+                    }
+                ]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"GRAVIDANZA E PARTO\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"GRAVIDANZA E PARTO\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"OSTEOMUSCOLARE\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [
+                    {
+                        \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Orthopedics\",
+                        \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Orthopedics1\",
+                        \"isPrimary\": true,
+                        \"isProvenance\": false,
+                        \"FullType\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#value\"
+                    },
+                    {
+                        \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Orthopedics\",
+                        \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Orthopedics1\",
+                        \"isPrimary\": false,
+                        \"FullType\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Presence\",
+                        \"DomainLabel\": \"Orthopedics1\"
+                    }
+                ]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"OSTEOMUSCOLARE\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"OSTEOMUSCOLARE\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"CARDIOCIRCOLATORIO\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Cardiology\",
+                    \"DomainId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Cardiology1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Presence\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Cardiology/Cardiology1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CARDIOCIRCOLATORIO\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"CARDIOCIRCOLATORIO\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Cardiology1\",
+                    \"edgeId\": \"http://www.w3.org/2000/01/rdf-schema#subClassOf\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Cardiology\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilityDepartment1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilityDepartment\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Neurology1\",
+                    \"edgeId\": \"http://www.w3.org/2000/01/rdf-schema#subClassOf\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Neurology\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilityDepartment1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilityDepartment\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Respiratory1\",
+                    \"edgeId\": \"http://www.w3.org/2000/01/rdf-schema#subClassOf\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Respiratory\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilityDepartment1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilityDepartment\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#GeneralSurgery1\",
+                    \"edgeId\": \"http://www.w3.org/2000/01/rdf-schema#subClassOf\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#GeneralSurgery\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilityDepartment1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilityDepartment\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#OncologicSurgery1\",
+                    \"edgeId\": \"http://www.w3.org/2000/01/rdf-schema#subClassOf\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#OncologicSurgery\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilityDepartment1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilityDepartment\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Obstetrics1\",
+                    \"edgeId\": \"http://www.w3.org/2000/01/rdf-schema#subClassOf\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Obstetrics\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilityDepartment1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilityDepartment\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Orthopedics1\",
+                    \"edgeId\": \"http://www.w3.org/2000/01/rdf-schema#subClassOf\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Orthopedics\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilityDepartment1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilityDepartment\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilityDepartment1\",
+                    \"edgeId\": \"http://www.w3.org/2000/01/rdf-schema#subClassOf\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilityDepartment\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilitiy1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilitiy\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#City1\",
+                    \"edgeId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#locatedIn\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#City\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilitiy1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilitiy\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Province1\",
+                    \"edgeId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#locatedIn\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Province\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilitiy1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilitiy\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    }
+]""" .
+
+km-dev:TriplesMap_d28bd6f7-205e-48e0-b3e0-fad07f2e07e6 a rr:TriplesMap .
+
+_:node1d16ejhjlx1 km-dev:hasTriplesMap km-dev:TriplesMap_d28bd6f7-205e-48e0-b3e0-fad07f2e07e6 .
+
+km-dev:TriplesMap_d28bd6f7-205e-48e0-b3e0-fad07f2e07e6 km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx2 rr:tableName "provinces.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasLogicalTable _:node1d16ejhjlx2 .
+
+km-dev:TriplesMap_d28bd6f7-205e-48e0-b3e0-fad07f2e07e6 rr:logicalTable _:node1d16ejhjlx2 ;
+	rr:subjectMap _:node1d16ejhjlx3 .
+
+_:node1d16ejhjlx1 km-dev:hasSubjectMap _:node1d16ejhjlx3 .
+
+_:node1d16ejhjlx3 km-dev:isPartOfMapping _:node1d16ejhjlx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Obstetrics1" ;
+	rr:class <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Obstetrics> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "Obstetrics1" .
+
+km-dev:PredicateObjectMap_fdf405c4-d902-4b96-aac5-65ef882175a7 rr:predicate rdf:value .
+
+_:node1d16ejhjlx4 rr:column "GRAVIDANZA E PARTO" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasObjectMap _:node1d16ejhjlx4 .
+
+km-dev:PredicateObjectMap_fdf405c4-d902-4b96-aac5-65ef882175a7 rr:objectMap _:node1d16ejhjlx4 .
+
+km-dev:TriplesMap_d28bd6f7-205e-48e0-b3e0-fad07f2e07e6 rr:predicateObjectMap km-dev:PredicateObjectMap_fdf405c4-d902-4b96-aac5-65ef882175a7 .
+
+km-dev:PredicateObjectMap_fdf405c4-d902-4b96-aac5-65ef882175a7 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_fdf405c4-d902-4b96-aac5-65ef882175a7 .
+
+km-dev:PredicateObjectMap_58d9705e-b961-4592-acb9-038d41be2eeb rr:predicate <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Presence> .
+
+_:node1d16ejhjlx5 rr:column "GRAVIDANZA E PARTO" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasObjectMap _:node1d16ejhjlx5 .
+
+km-dev:PredicateObjectMap_58d9705e-b961-4592-acb9-038d41be2eeb rr:objectMap _:node1d16ejhjlx5 .
+
+km-dev:TriplesMap_d28bd6f7-205e-48e0-b3e0-fad07f2e07e6 rr:predicateObjectMap km-dev:PredicateObjectMap_58d9705e-b961-4592-acb9-038d41be2eeb .
+
+km-dev:PredicateObjectMap_58d9705e-b961-4592-acb9-038d41be2eeb a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_58d9705e-b961-4592-acb9-038d41be2eeb .
+
+km-dev:TriplesMap_e10394ba-587d-45c1-82ff-f881cd3a2321 a rr:TriplesMap .
+
+_:node1d16ejhjlx1 km-dev:hasTriplesMap km-dev:TriplesMap_e10394ba-587d-45c1-82ff-f881cd3a2321 .
+
+km-dev:TriplesMap_e10394ba-587d-45c1-82ff-f881cd3a2321 km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx6 rr:tableName "provinces.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasLogicalTable _:node1d16ejhjlx6 .
+
+km-dev:TriplesMap_e10394ba-587d-45c1-82ff-f881cd3a2321 rr:logicalTable _:node1d16ejhjlx6 ;
+	rr:subjectMap _:node1d16ejhjlx7 .
+
+_:node1d16ejhjlx1 km-dev:hasSubjectMap _:node1d16ejhjlx7 .
+
+_:node1d16ejhjlx7 km-dev:isPartOfMapping _:node1d16ejhjlx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilityDepartment1" ;
+	rr:class <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilityDepartment> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "HealthcareFacilityDepartment1" .
+
+km-dev:PredicateObjectMap_99cc94f0-32e3-4268-b6c4-7323fe0e4646 rr:predicate rdfs:subClassOf .
+
+km-dev:RefObjectMap_4169a6aa-9289-4b10-8bf6-b58f2fd03efb a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_a7d7fe2c-ce09-41fd-bca6-80955a544d16 ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasObjectMap km-dev:RefObjectMap_4169a6aa-9289-4b10-8bf6-b58f2fd03efb .
+
+km-dev:PredicateObjectMap_99cc94f0-32e3-4268-b6c4-7323fe0e4646 rr:objectMap km-dev:RefObjectMap_4169a6aa-9289-4b10-8bf6-b58f2fd03efb .
+
+km-dev:TriplesMap_e10394ba-587d-45c1-82ff-f881cd3a2321 rr:predicateObjectMap km-dev:PredicateObjectMap_99cc94f0-32e3-4268-b6c4-7323fe0e4646 .
+
+km-dev:PredicateObjectMap_99cc94f0-32e3-4268-b6c4-7323fe0e4646 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_99cc94f0-32e3-4268-b6c4-7323fe0e4646 .
+
+km-dev:PredicateObjectMap_7d5c3cf0-eac5-4c23-83e6-537f4915b37c rr:predicate rdfs:subClassOf .
+
+km-dev:RefObjectMap_1dff754c-46de-4c15-a6c8-66959b706807 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_3fb9ee1a-9c1b-4687-a724-92d2265cc04a ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasObjectMap km-dev:RefObjectMap_1dff754c-46de-4c15-a6c8-66959b706807 .
+
+km-dev:PredicateObjectMap_7d5c3cf0-eac5-4c23-83e6-537f4915b37c rr:objectMap km-dev:RefObjectMap_1dff754c-46de-4c15-a6c8-66959b706807 .
+
+km-dev:TriplesMap_e10394ba-587d-45c1-82ff-f881cd3a2321 rr:predicateObjectMap km-dev:PredicateObjectMap_7d5c3cf0-eac5-4c23-83e6-537f4915b37c .
+
+km-dev:PredicateObjectMap_7d5c3cf0-eac5-4c23-83e6-537f4915b37c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7d5c3cf0-eac5-4c23-83e6-537f4915b37c .
+
+km-dev:PredicateObjectMap_9987c39b-e4e8-42e6-9e65-af7d33627c70 rr:predicate rdfs:subClassOf .
+
+km-dev:RefObjectMap_964697b1-8ab6-4011-ae2d-4d631448ce38 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_2105570b-2ce9-41e9-ab84-cbfd90d5ad82 ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasObjectMap km-dev:RefObjectMap_964697b1-8ab6-4011-ae2d-4d631448ce38 .
+
+km-dev:PredicateObjectMap_9987c39b-e4e8-42e6-9e65-af7d33627c70 rr:objectMap km-dev:RefObjectMap_964697b1-8ab6-4011-ae2d-4d631448ce38 .
+
+km-dev:TriplesMap_e10394ba-587d-45c1-82ff-f881cd3a2321 rr:predicateObjectMap km-dev:PredicateObjectMap_9987c39b-e4e8-42e6-9e65-af7d33627c70 .
+
+km-dev:PredicateObjectMap_9987c39b-e4e8-42e6-9e65-af7d33627c70 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_9987c39b-e4e8-42e6-9e65-af7d33627c70 .
+
+km-dev:PredicateObjectMap_cf1f320d-3fb4-4088-b9b1-ab0457e30128 rr:predicate rdfs:subClassOf .
+
+km-dev:RefObjectMap_d5c0b597-2e06-4a25-923e-998e60d7bd5e a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_d28bd6f7-205e-48e0-b3e0-fad07f2e07e6 ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasObjectMap km-dev:RefObjectMap_d5c0b597-2e06-4a25-923e-998e60d7bd5e .
+
+km-dev:PredicateObjectMap_cf1f320d-3fb4-4088-b9b1-ab0457e30128 rr:objectMap km-dev:RefObjectMap_d5c0b597-2e06-4a25-923e-998e60d7bd5e .
+
+km-dev:TriplesMap_e10394ba-587d-45c1-82ff-f881cd3a2321 rr:predicateObjectMap km-dev:PredicateObjectMap_cf1f320d-3fb4-4088-b9b1-ab0457e30128 .
+
+km-dev:PredicateObjectMap_cf1f320d-3fb4-4088-b9b1-ab0457e30128 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_cf1f320d-3fb4-4088-b9b1-ab0457e30128 .
+
+km-dev:PredicateObjectMap_d4579bfb-05b4-4a3c-965a-26489a12e3aa rr:predicate rdfs:subClassOf .
+
+km-dev:RefObjectMap_3bd52c1b-e174-4edd-86ad-cdcab6fc0007 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_0e0c553b-0495-42f7-bdf8-8c37612fdf21 ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasObjectMap km-dev:RefObjectMap_3bd52c1b-e174-4edd-86ad-cdcab6fc0007 .
+
+km-dev:PredicateObjectMap_d4579bfb-05b4-4a3c-965a-26489a12e3aa rr:objectMap km-dev:RefObjectMap_3bd52c1b-e174-4edd-86ad-cdcab6fc0007 .
+
+km-dev:TriplesMap_e10394ba-587d-45c1-82ff-f881cd3a2321 rr:predicateObjectMap km-dev:PredicateObjectMap_d4579bfb-05b4-4a3c-965a-26489a12e3aa .
+
+km-dev:PredicateObjectMap_d4579bfb-05b4-4a3c-965a-26489a12e3aa a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d4579bfb-05b4-4a3c-965a-26489a12e3aa .
+
+km-dev:PredicateObjectMap_984c1238-8e6e-4275-97a6-e95e348304a9 rr:predicate rdfs:subClassOf .
+
+km-dev:RefObjectMap_c5bbc426-8e1d-4e2f-8d98-b6c2e6e54638 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_e86080f3-7c00-4695-8755-1b746969cd3d ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasObjectMap km-dev:RefObjectMap_c5bbc426-8e1d-4e2f-8d98-b6c2e6e54638 .
+
+km-dev:PredicateObjectMap_984c1238-8e6e-4275-97a6-e95e348304a9 rr:objectMap km-dev:RefObjectMap_c5bbc426-8e1d-4e2f-8d98-b6c2e6e54638 .
+
+km-dev:TriplesMap_e10394ba-587d-45c1-82ff-f881cd3a2321 rr:predicateObjectMap km-dev:PredicateObjectMap_984c1238-8e6e-4275-97a6-e95e348304a9 .
+
+km-dev:PredicateObjectMap_984c1238-8e6e-4275-97a6-e95e348304a9 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_984c1238-8e6e-4275-97a6-e95e348304a9 .
+
+km-dev:PredicateObjectMap_08bcb1be-de66-4cb7-90d8-9c9b125cafbe rr:predicate rdfs:subClassOf .
+
+km-dev:RefObjectMap_6be6e582-33d1-4de0-8e28-b7e171b790e0 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_aeeab8a5-148e-443f-8176-c64fa4f143ba ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasObjectMap km-dev:RefObjectMap_6be6e582-33d1-4de0-8e28-b7e171b790e0 .
+
+km-dev:PredicateObjectMap_08bcb1be-de66-4cb7-90d8-9c9b125cafbe rr:objectMap km-dev:RefObjectMap_6be6e582-33d1-4de0-8e28-b7e171b790e0 .
+
+km-dev:TriplesMap_e10394ba-587d-45c1-82ff-f881cd3a2321 rr:predicateObjectMap km-dev:PredicateObjectMap_08bcb1be-de66-4cb7-90d8-9c9b125cafbe .
+
+km-dev:PredicateObjectMap_08bcb1be-de66-4cb7-90d8-9c9b125cafbe a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_08bcb1be-de66-4cb7-90d8-9c9b125cafbe .
+
+km-dev:TriplesMap_a7d7fe2c-ce09-41fd-bca6-80955a544d16 a rr:TriplesMap .
+
+_:node1d16ejhjlx1 km-dev:hasTriplesMap km-dev:TriplesMap_a7d7fe2c-ce09-41fd-bca6-80955a544d16 .
+
+km-dev:TriplesMap_a7d7fe2c-ce09-41fd-bca6-80955a544d16 km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx8 rr:tableName "provinces.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasLogicalTable _:node1d16ejhjlx8 .
+
+km-dev:TriplesMap_a7d7fe2c-ce09-41fd-bca6-80955a544d16 rr:logicalTable _:node1d16ejhjlx8 ;
+	rr:subjectMap _:node1d16ejhjlx9 .
+
+_:node1d16ejhjlx1 km-dev:hasSubjectMap _:node1d16ejhjlx9 .
+
+_:node1d16ejhjlx9 km-dev:isPartOfMapping _:node1d16ejhjlx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Respiratory1" ;
+	rr:class <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Respiratory> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "Respiratory1" .
+
+km-dev:PredicateObjectMap_0da0618f-cc92-40e8-83db-9da725e25a0a rr:predicate <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Presence> .
+
+_:node1d16ejhjlx10 rr:column "RESPIRATORIO" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasObjectMap _:node1d16ejhjlx10 .
+
+km-dev:PredicateObjectMap_0da0618f-cc92-40e8-83db-9da725e25a0a rr:objectMap _:node1d16ejhjlx10 .
+
+km-dev:TriplesMap_a7d7fe2c-ce09-41fd-bca6-80955a544d16 rr:predicateObjectMap km-dev:PredicateObjectMap_0da0618f-cc92-40e8-83db-9da725e25a0a .
+
+km-dev:PredicateObjectMap_0da0618f-cc92-40e8-83db-9da725e25a0a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0da0618f-cc92-40e8-83db-9da725e25a0a .
+
+km-dev:PredicateObjectMap_70d6971a-bb15-4cdc-8c94-be2df3303603 rr:predicate rdf:value .
+
+_:node1d16ejhjlx11 rr:column "RESPIRATORIO" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasObjectMap _:node1d16ejhjlx11 .
+
+km-dev:PredicateObjectMap_70d6971a-bb15-4cdc-8c94-be2df3303603 rr:objectMap _:node1d16ejhjlx11 .
+
+km-dev:TriplesMap_a7d7fe2c-ce09-41fd-bca6-80955a544d16 rr:predicateObjectMap km-dev:PredicateObjectMap_70d6971a-bb15-4cdc-8c94-be2df3303603 .
+
+km-dev:PredicateObjectMap_70d6971a-bb15-4cdc-8c94-be2df3303603 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_70d6971a-bb15-4cdc-8c94-be2df3303603 .
+
+km-dev:TriplesMap_aeeab8a5-148e-443f-8176-c64fa4f143ba a rr:TriplesMap .
+
+_:node1d16ejhjlx1 km-dev:hasTriplesMap km-dev:TriplesMap_aeeab8a5-148e-443f-8176-c64fa4f143ba .
+
+km-dev:TriplesMap_aeeab8a5-148e-443f-8176-c64fa4f143ba km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx12 rr:tableName "provinces.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasLogicalTable _:node1d16ejhjlx12 .
+
+km-dev:TriplesMap_aeeab8a5-148e-443f-8176-c64fa4f143ba rr:logicalTable _:node1d16ejhjlx12 ;
+	rr:subjectMap _:node1d16ejhjlx13 .
+
+_:node1d16ejhjlx1 km-dev:hasSubjectMap _:node1d16ejhjlx13 .
+
+_:node1d16ejhjlx13 km-dev:isPartOfMapping _:node1d16ejhjlx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#GeneralSurgery1" ;
+	rr:class <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#GeneralSurgery> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "GeneralSurgery1" .
+
+km-dev:PredicateObjectMap_ef1e22c2-092e-467d-83ab-e548337317f8 rr:predicate rdf:value .
+
+_:node1d16ejhjlx14 rr:column "CH. GENERALE" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasObjectMap _:node1d16ejhjlx14 .
+
+km-dev:PredicateObjectMap_ef1e22c2-092e-467d-83ab-e548337317f8 rr:objectMap _:node1d16ejhjlx14 .
+
+km-dev:TriplesMap_aeeab8a5-148e-443f-8176-c64fa4f143ba rr:predicateObjectMap km-dev:PredicateObjectMap_ef1e22c2-092e-467d-83ab-e548337317f8 .
+
+km-dev:PredicateObjectMap_ef1e22c2-092e-467d-83ab-e548337317f8 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ef1e22c2-092e-467d-83ab-e548337317f8 .
+
+km-dev:PredicateObjectMap_824bce93-0463-435f-b400-4d663abda1d7 rr:predicate <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Presence> .
+
+_:node1d16ejhjlx15 rr:column "CH. GENERALE" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasObjectMap _:node1d16ejhjlx15 .
+
+km-dev:PredicateObjectMap_824bce93-0463-435f-b400-4d663abda1d7 rr:objectMap _:node1d16ejhjlx15 .
+
+km-dev:TriplesMap_aeeab8a5-148e-443f-8176-c64fa4f143ba rr:predicateObjectMap km-dev:PredicateObjectMap_824bce93-0463-435f-b400-4d663abda1d7 .
+
+km-dev:PredicateObjectMap_824bce93-0463-435f-b400-4d663abda1d7 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_824bce93-0463-435f-b400-4d663abda1d7 .
+
+km-dev:TriplesMap_3fb9ee1a-9c1b-4687-a724-92d2265cc04a a rr:TriplesMap .
+
+_:node1d16ejhjlx1 km-dev:hasTriplesMap km-dev:TriplesMap_3fb9ee1a-9c1b-4687-a724-92d2265cc04a .
+
+km-dev:TriplesMap_3fb9ee1a-9c1b-4687-a724-92d2265cc04a km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx16 rr:tableName "provinces.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasLogicalTable _:node1d16ejhjlx16 .
+
+km-dev:TriplesMap_3fb9ee1a-9c1b-4687-a724-92d2265cc04a rr:logicalTable _:node1d16ejhjlx16 ;
+	rr:subjectMap _:node1d16ejhjlx17 .
+
+_:node1d16ejhjlx1 km-dev:hasSubjectMap _:node1d16ejhjlx17 .
+
+_:node1d16ejhjlx17 km-dev:isPartOfMapping _:node1d16ejhjlx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Cardiology1" ;
+	rr:class <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Cardiology> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "Cardiology1" .
+
+km-dev:PredicateObjectMap_24a00366-8922-461b-b7ea-4c51a621515f rr:predicate <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Presence> .
+
+_:node1d16ejhjlx18 rr:column "CARDIOCIRCOLATORIO" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasObjectMap _:node1d16ejhjlx18 .
+
+km-dev:PredicateObjectMap_24a00366-8922-461b-b7ea-4c51a621515f rr:objectMap _:node1d16ejhjlx18 .
+
+km-dev:TriplesMap_3fb9ee1a-9c1b-4687-a724-92d2265cc04a rr:predicateObjectMap km-dev:PredicateObjectMap_24a00366-8922-461b-b7ea-4c51a621515f .
+
+km-dev:PredicateObjectMap_24a00366-8922-461b-b7ea-4c51a621515f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_24a00366-8922-461b-b7ea-4c51a621515f .
+
+km-dev:TriplesMap_a6fb1046-263c-4c37-b91f-606f7af100a9 a rr:TriplesMap .
+
+_:node1d16ejhjlx1 km-dev:hasTriplesMap km-dev:TriplesMap_a6fb1046-263c-4c37-b91f-606f7af100a9 .
+
+km-dev:TriplesMap_a6fb1046-263c-4c37-b91f-606f7af100a9 km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx19 rr:tableName "provinces.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasLogicalTable _:node1d16ejhjlx19 .
+
+km-dev:TriplesMap_a6fb1046-263c-4c37-b91f-606f7af100a9 rr:logicalTable _:node1d16ejhjlx19 ;
+	rr:subjectMap _:node1d16ejhjlx20 .
+
+_:node1d16ejhjlx1 km-dev:hasSubjectMap _:node1d16ejhjlx20 .
+
+_:node1d16ejhjlx20 km-dev:isPartOfMapping _:node1d16ejhjlx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#City1" ;
+	rr:class <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#City> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "City1" .
+
+km-dev:PredicateObjectMap_d258c80f-ba9b-46c3-83de-eabe33548f02 rr:predicate rdfs:label .
+
+_:node1d16ejhjlx21 rr:column "city" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasObjectMap _:node1d16ejhjlx21 .
+
+km-dev:PredicateObjectMap_d258c80f-ba9b-46c3-83de-eabe33548f02 rr:objectMap _:node1d16ejhjlx21 .
+
+km-dev:TriplesMap_a6fb1046-263c-4c37-b91f-606f7af100a9 rr:predicateObjectMap km-dev:PredicateObjectMap_d258c80f-ba9b-46c3-83de-eabe33548f02 .
+
+km-dev:PredicateObjectMap_d258c80f-ba9b-46c3-83de-eabe33548f02 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d258c80f-ba9b-46c3-83de-eabe33548f02 .
+
+km-dev:TriplesMap_e86080f3-7c00-4695-8755-1b746969cd3d a rr:TriplesMap .
+
+_:node1d16ejhjlx1 km-dev:hasTriplesMap km-dev:TriplesMap_e86080f3-7c00-4695-8755-1b746969cd3d .
+
+km-dev:TriplesMap_e86080f3-7c00-4695-8755-1b746969cd3d km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx22 rr:tableName "provinces.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasLogicalTable _:node1d16ejhjlx22 .
+
+km-dev:TriplesMap_e86080f3-7c00-4695-8755-1b746969cd3d rr:logicalTable _:node1d16ejhjlx22 ;
+	rr:subjectMap _:node1d16ejhjlx23 .
+
+_:node1d16ejhjlx1 km-dev:hasSubjectMap _:node1d16ejhjlx23 .
+
+_:node1d16ejhjlx23 km-dev:isPartOfMapping _:node1d16ejhjlx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#OncologicSurgery1" ;
+	rr:class <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#OncologicSurgery> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "OncologicSurgery1" .
+
+km-dev:PredicateObjectMap_5b88c046-9e8e-41c3-9838-c0c605f8673e rr:predicate rdf:value .
+
+_:node1d16ejhjlx24 rr:column "CH. ONCOLOGICA" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasObjectMap _:node1d16ejhjlx24 .
+
+km-dev:PredicateObjectMap_5b88c046-9e8e-41c3-9838-c0c605f8673e rr:objectMap _:node1d16ejhjlx24 .
+
+km-dev:TriplesMap_e86080f3-7c00-4695-8755-1b746969cd3d rr:predicateObjectMap km-dev:PredicateObjectMap_5b88c046-9e8e-41c3-9838-c0c605f8673e .
+
+km-dev:PredicateObjectMap_5b88c046-9e8e-41c3-9838-c0c605f8673e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_5b88c046-9e8e-41c3-9838-c0c605f8673e .
+
+km-dev:PredicateObjectMap_ab4bd7a2-95ad-464f-ab33-2d9c3acd4b01 rr:predicate <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Presence> .
+
+_:node1d16ejhjlx25 rr:column "CH. ONCOLOGICA" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasObjectMap _:node1d16ejhjlx25 .
+
+km-dev:PredicateObjectMap_ab4bd7a2-95ad-464f-ab33-2d9c3acd4b01 rr:objectMap _:node1d16ejhjlx25 .
+
+km-dev:TriplesMap_e86080f3-7c00-4695-8755-1b746969cd3d rr:predicateObjectMap km-dev:PredicateObjectMap_ab4bd7a2-95ad-464f-ab33-2d9c3acd4b01 .
+
+km-dev:PredicateObjectMap_ab4bd7a2-95ad-464f-ab33-2d9c3acd4b01 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ab4bd7a2-95ad-464f-ab33-2d9c3acd4b01 .
+
+km-dev:TriplesMap_0e0c553b-0495-42f7-bdf8-8c37612fdf21 a rr:TriplesMap .
+
+_:node1d16ejhjlx1 km-dev:hasTriplesMap km-dev:TriplesMap_0e0c553b-0495-42f7-bdf8-8c37612fdf21 .
+
+km-dev:TriplesMap_0e0c553b-0495-42f7-bdf8-8c37612fdf21 km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx26 rr:tableName "provinces.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasLogicalTable _:node1d16ejhjlx26 .
+
+km-dev:TriplesMap_0e0c553b-0495-42f7-bdf8-8c37612fdf21 rr:logicalTable _:node1d16ejhjlx26 ;
+	rr:subjectMap _:node1d16ejhjlx27 .
+
+_:node1d16ejhjlx1 km-dev:hasSubjectMap _:node1d16ejhjlx27 .
+
+_:node1d16ejhjlx27 km-dev:isPartOfMapping _:node1d16ejhjlx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Orthopedics1" ;
+	rr:class <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Orthopedics> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "Orthopedics1" .
+
+km-dev:PredicateObjectMap_741d63ec-0391-4981-b7b2-f8d8b541ab8c rr:predicate <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Presence> .
+
+_:node1d16ejhjlx28 rr:column "OSTEOMUSCOLARE" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasObjectMap _:node1d16ejhjlx28 .
+
+km-dev:PredicateObjectMap_741d63ec-0391-4981-b7b2-f8d8b541ab8c rr:objectMap _:node1d16ejhjlx28 .
+
+km-dev:TriplesMap_0e0c553b-0495-42f7-bdf8-8c37612fdf21 rr:predicateObjectMap km-dev:PredicateObjectMap_741d63ec-0391-4981-b7b2-f8d8b541ab8c .
+
+km-dev:PredicateObjectMap_741d63ec-0391-4981-b7b2-f8d8b541ab8c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_741d63ec-0391-4981-b7b2-f8d8b541ab8c .
+
+km-dev:PredicateObjectMap_d55ed822-76fb-42f4-a81c-2d19a9f4e4b7 rr:predicate rdf:value .
+
+_:node1d16ejhjlx29 rr:column "OSTEOMUSCOLARE" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasObjectMap _:node1d16ejhjlx29 .
+
+km-dev:PredicateObjectMap_d55ed822-76fb-42f4-a81c-2d19a9f4e4b7 rr:objectMap _:node1d16ejhjlx29 .
+
+km-dev:TriplesMap_0e0c553b-0495-42f7-bdf8-8c37612fdf21 rr:predicateObjectMap km-dev:PredicateObjectMap_d55ed822-76fb-42f4-a81c-2d19a9f4e4b7 .
+
+km-dev:PredicateObjectMap_d55ed822-76fb-42f4-a81c-2d19a9f4e4b7 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d55ed822-76fb-42f4-a81c-2d19a9f4e4b7 .
+
+km-dev:TriplesMap_e93a5b9a-bd45-4247-be3a-506c829a1938 a rr:TriplesMap .
+
+_:node1d16ejhjlx1 km-dev:hasTriplesMap km-dev:TriplesMap_e93a5b9a-bd45-4247-be3a-506c829a1938 .
+
+km-dev:TriplesMap_e93a5b9a-bd45-4247-be3a-506c829a1938 km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx30 rr:tableName "provinces.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasLogicalTable _:node1d16ejhjlx30 .
+
+km-dev:TriplesMap_e93a5b9a-bd45-4247-be3a-506c829a1938 rr:logicalTable _:node1d16ejhjlx30 ;
+	rr:subjectMap _:node1d16ejhjlx31 .
+
+_:node1d16ejhjlx1 km-dev:hasSubjectMap _:node1d16ejhjlx31 .
+
+_:node1d16ejhjlx31 km-dev:isPartOfMapping _:node1d16ejhjlx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilitiy1" ;
+	rr:class <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#HealthcareFacilitiy> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "HealthcareFacilitiy1" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_764c2bf3-c59a-47e1-a6bb-67608b1b318c rr:predicate rdfs:subClassOf .
+
+km-dev:RefObjectMap_2df93ed9-01df-4350-9e0e-6bfafd7dafaf a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_e10394ba-587d-45c1-82ff-f881cd3a2321 ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasObjectMap km-dev:RefObjectMap_2df93ed9-01df-4350-9e0e-6bfafd7dafaf .
+
+km-dev:PredicateObjectMap_764c2bf3-c59a-47e1-a6bb-67608b1b318c rr:objectMap km-dev:RefObjectMap_2df93ed9-01df-4350-9e0e-6bfafd7dafaf .
+
+km-dev:TriplesMap_e93a5b9a-bd45-4247-be3a-506c829a1938 rr:predicateObjectMap km-dev:PredicateObjectMap_764c2bf3-c59a-47e1-a6bb-67608b1b318c .
+
+km-dev:PredicateObjectMap_764c2bf3-c59a-47e1-a6bb-67608b1b318c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_764c2bf3-c59a-47e1-a6bb-67608b1b318c .
+
+km-dev:PredicateObjectMap_ed627bf5-cb81-4028-9a2b-0cee81e5b49e rr:predicate <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#locatedIn> .
+
+km-dev:RefObjectMap_bb01ec60-bf55-46dc-b2b6-66a9cfce59ab a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_1695a4c8-637d-4933-a3df-4cb9cd5aff70 ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasObjectMap km-dev:RefObjectMap_bb01ec60-bf55-46dc-b2b6-66a9cfce59ab .
+
+km-dev:PredicateObjectMap_ed627bf5-cb81-4028-9a2b-0cee81e5b49e rr:objectMap km-dev:RefObjectMap_bb01ec60-bf55-46dc-b2b6-66a9cfce59ab .
+
+km-dev:TriplesMap_e93a5b9a-bd45-4247-be3a-506c829a1938 rr:predicateObjectMap km-dev:PredicateObjectMap_ed627bf5-cb81-4028-9a2b-0cee81e5b49e .
+
+km-dev:PredicateObjectMap_ed627bf5-cb81-4028-9a2b-0cee81e5b49e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ed627bf5-cb81-4028-9a2b-0cee81e5b49e .
+
+km-dev:PredicateObjectMap_a026a6ac-1fc2-4640-ac4e-3d28d865de46 rr:predicate <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#locatedIn> .
+
+km-dev:RefObjectMap_5eb8beab-f8a8-48a0-a040-4e2675fb7f22 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_a6fb1046-263c-4c37-b91f-606f7af100a9 ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasObjectMap km-dev:RefObjectMap_5eb8beab-f8a8-48a0-a040-4e2675fb7f22 .
+
+km-dev:PredicateObjectMap_a026a6ac-1fc2-4640-ac4e-3d28d865de46 rr:objectMap km-dev:RefObjectMap_5eb8beab-f8a8-48a0-a040-4e2675fb7f22 .
+
+km-dev:TriplesMap_e93a5b9a-bd45-4247-be3a-506c829a1938 rr:predicateObjectMap km-dev:PredicateObjectMap_a026a6ac-1fc2-4640-ac4e-3d28d865de46 .
+
+km-dev:PredicateObjectMap_a026a6ac-1fc2-4640-ac4e-3d28d865de46 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a026a6ac-1fc2-4640-ac4e-3d28d865de46 .
+
+km-dev:TriplesMap_2105570b-2ce9-41e9-ab84-cbfd90d5ad82 a rr:TriplesMap .
+
+_:node1d16ejhjlx1 km-dev:hasTriplesMap km-dev:TriplesMap_2105570b-2ce9-41e9-ab84-cbfd90d5ad82 .
+
+km-dev:TriplesMap_2105570b-2ce9-41e9-ab84-cbfd90d5ad82 km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx32 rr:tableName "provinces.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasLogicalTable _:node1d16ejhjlx32 .
+
+km-dev:TriplesMap_2105570b-2ce9-41e9-ab84-cbfd90d5ad82 rr:logicalTable _:node1d16ejhjlx32 ;
+	rr:subjectMap _:node1d16ejhjlx33 .
+
+_:node1d16ejhjlx1 km-dev:hasSubjectMap _:node1d16ejhjlx33 .
+
+_:node1d16ejhjlx33 km-dev:isPartOfMapping _:node1d16ejhjlx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Neurology1" ;
+	rr:class <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Neurology> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "Neurology1" .
+
+km-dev:PredicateObjectMap_a9a635b2-44ec-4242-bb79-4bbcc4965953 rr:predicate <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Presence> .
+
+_:node1d16ejhjlx34 rr:column "NERVOSO" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasObjectMap _:node1d16ejhjlx34 .
+
+km-dev:PredicateObjectMap_a9a635b2-44ec-4242-bb79-4bbcc4965953 rr:objectMap _:node1d16ejhjlx34 .
+
+km-dev:TriplesMap_2105570b-2ce9-41e9-ab84-cbfd90d5ad82 rr:predicateObjectMap km-dev:PredicateObjectMap_a9a635b2-44ec-4242-bb79-4bbcc4965953 .
+
+km-dev:PredicateObjectMap_a9a635b2-44ec-4242-bb79-4bbcc4965953 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a9a635b2-44ec-4242-bb79-4bbcc4965953 .
+
+km-dev:PredicateObjectMap_3825f414-3ba2-4597-8b7e-af5f5e534cc4 rr:predicate rdf:value .
+
+_:node1d16ejhjlx35 rr:column "NERVOSO" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasObjectMap _:node1d16ejhjlx35 .
+
+km-dev:PredicateObjectMap_3825f414-3ba2-4597-8b7e-af5f5e534cc4 rr:objectMap _:node1d16ejhjlx35 .
+
+km-dev:TriplesMap_2105570b-2ce9-41e9-ab84-cbfd90d5ad82 rr:predicateObjectMap km-dev:PredicateObjectMap_3825f414-3ba2-4597-8b7e-af5f5e534cc4 .
+
+km-dev:PredicateObjectMap_3825f414-3ba2-4597-8b7e-af5f5e534cc4 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3825f414-3ba2-4597-8b7e-af5f5e534cc4 .
+
+km-dev:TriplesMap_1695a4c8-637d-4933-a3df-4cb9cd5aff70 a rr:TriplesMap .
+
+_:node1d16ejhjlx1 km-dev:hasTriplesMap km-dev:TriplesMap_1695a4c8-637d-4933-a3df-4cb9cd5aff70 .
+
+km-dev:TriplesMap_1695a4c8-637d-4933-a3df-4cb9cd5aff70 km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx36 rr:tableName "provinces.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasLogicalTable _:node1d16ejhjlx36 .
+
+km-dev:TriplesMap_1695a4c8-637d-4933-a3df-4cb9cd5aff70 rr:logicalTable _:node1d16ejhjlx36 ;
+	rr:subjectMap _:node1d16ejhjlx37 .
+
+_:node1d16ejhjlx1 km-dev:hasSubjectMap _:node1d16ejhjlx37 .
+
+_:node1d16ejhjlx37 km-dev:isPartOfMapping _:node1d16ejhjlx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Province1" ;
+	rr:class <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#Province> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "Province1" .
+
+km-dev:PredicateObjectMap_6a802d5b-fdfc-40ef-af02-3edad28f3d8a rr:predicate rdfs:label .
+
+_:node1d16ejhjlx38 rr:column "province" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasObjectMap _:node1d16ejhjlx38 .
+
+km-dev:PredicateObjectMap_6a802d5b-fdfc-40ef-af02-3edad28f3d8a rr:objectMap _:node1d16ejhjlx38 .
+
+km-dev:TriplesMap_1695a4c8-637d-4933-a3df-4cb9cd5aff70 rr:predicateObjectMap km-dev:PredicateObjectMap_6a802d5b-fdfc-40ef-af02-3edad28f3d8a .
+
+km-dev:PredicateObjectMap_6a802d5b-fdfc-40ef-af02-3edad28f3d8a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1d16ejhjlx1 .
+
+_:node1d16ejhjlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6a802d5b-fdfc-40ef-af02-3edad28f3d8a .

@@ -1,0 +1,48 @@
+<http://localhost:8080/source/clinicalprocedure_id/AcuteMiocardialStrokeStandardProcedure> <http://www.w3.org/2000/01/rdf-schema#label> "AcuteMiocardialStrokeStandardProcedure" .
+<http://localhost:8080/source/clinicalprocedure_id/AcuteMiocardialStrokeStandardProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure> .
+
+<http://localhost:8080/source/clinicalprocedure_id/AneurysmRepairSurgery> <http://www.w3.org/2000/01/rdf-schema#label> "AneurysmRepairSurgery" .
+<http://localhost:8080/source/clinicalprocedure_id/AneurysmRepairSurgery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure> .
+
+<http://localhost:8080/source/clinicalprocedure_id/BirthDeliveryProcedure> <http://www.w3.org/2000/01/rdf-schema#label> "BirthDeliveryProcedure" .
+<http://localhost:8080/source/clinicalprocedure_id/BirthDeliveryProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure> .
+
+<http://localhost:8080/source/clinicalprocedure_id/ChronicObstructivePulmonaryDiseaseStandardProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure> .
+<http://localhost:8080/source/clinicalprocedure_id/ChronicObstructivePulmonaryDiseaseStandardProcedure> <http://www.w3.org/2000/01/rdf-schema#label> "ChronicObstructivePulmonaryDiseaseStandardProcedure" .
+
+<http://localhost:8080/source/clinicalprocedure_id/ColonTumorSurgery> <http://www.w3.org/2000/01/rdf-schema#label> "ColonTumorSurgery" .
+<http://localhost:8080/source/clinicalprocedure_id/ColonTumorSurgery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure> .
+
+<http://localhost:8080/source/clinicalprocedure_id/CongestiveHeartFailureStandardProcedure> <http://www.w3.org/2000/01/rdf-schema#label> "CongestiveHeartFailureStandardProcedure" .
+<http://localhost:8080/source/clinicalprocedure_id/CongestiveHeartFailureStandardProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure> .
+
+<http://localhost:8080/source/clinicalprocedure_id/CoronaryArteryBypassSurgery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure> .
+<http://localhost:8080/source/clinicalprocedure_id/CoronaryArteryBypassSurgery> <http://www.w3.org/2000/01/rdf-schema#label> "CoronaryArteryBypassSurgery" .
+
+<http://localhost:8080/source/clinicalprocedure_id/CraniotomySurgery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure> .
+<http://localhost:8080/source/clinicalprocedure_id/CraniotomySurgery> <http://www.w3.org/2000/01/rdf-schema#label> "CraniotomySurgery" .
+
+<http://localhost:8080/source/clinicalprocedure_id/FemoralNeckFractureSurgery> <http://www.w3.org/2000/01/rdf-schema#label> "FemoralNeckFractureSurgery" .
+<http://localhost:8080/source/clinicalprocedure_id/FemoralNeckFractureSurgery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure> .
+
+<http://localhost:8080/source/clinicalprocedure_id/IschemicStrokeStandardProcedure> <http://www.w3.org/2000/01/rdf-schema#label> "IschemicStrokeStandardProcedure" .
+<http://localhost:8080/source/clinicalprocedure_id/IschemicStrokeStandardProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure> .
+
+<http://localhost:8080/source/clinicalprocedure_id/LaparoscopicCholecystectomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure> .
+<http://localhost:8080/source/clinicalprocedure_id/LaparoscopicCholecystectomy> <http://www.w3.org/2000/01/rdf-schema#label> "LaparoscopicCholecystectomy" .
+
+<http://localhost:8080/source/clinicalprocedure_id/LungTumorSurgery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure> .
+<http://localhost:8080/source/clinicalprocedure_id/LungTumorSurgery> <http://www.w3.org/2000/01/rdf-schema#label> "LungTumorSurgery" .
+
+<http://localhost:8080/source/clinicalprocedure_id/MammaryTumorSurgery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure> .
+<http://localhost:8080/source/clinicalprocedure_id/MammaryTumorSurgery> <http://www.w3.org/2000/01/rdf-schema#label> "MammaryTumorSurgery" .
+
+<http://localhost:8080/source/clinicalprocedure_id/StomachTumorSurgery> <http://www.w3.org/2000/01/rdf-schema#label> "StomachTumorSurgery" .
+<http://localhost:8080/source/clinicalprocedure_id/StomachTumorSurgery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure> .
+
+<http://localhost:8080/source/clinicalprocedure_id/Tibia/FibulaFractureSurgery> <http://www.w3.org/2000/01/rdf-schema#label> "Tibia/FibulaFractureSurgery" .
+<http://localhost:8080/source/clinicalprocedure_id/Tibia/FibulaFractureSurgery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure> .
+
+<http://localhost:8080/source/clinicalprocedure_id/ValvuloplastySurgery> <http://www.w3.org/2000/01/rdf-schema#label> "ValvuloplastySurgery" .
+<http://localhost:8080/source/clinicalprocedure_id/ValvuloplastySurgery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chiara/ontologies/2018/10/untitled-ontology-7#ClinicalProcedure> .
+
